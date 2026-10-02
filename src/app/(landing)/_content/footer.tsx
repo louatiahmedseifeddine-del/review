@@ -12,7 +12,6 @@ const quickLinks: FooterLink[] = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms of Service", href: "/terms-of-service" },
   { label: "Legal Notice", href: "/legal-notice" },
-  { label: "About us", href: "/about-us" },
   { label: "Contact us", href: "/contact-us" },
 ];
 
