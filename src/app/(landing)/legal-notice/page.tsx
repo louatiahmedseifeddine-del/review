@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { LegalNoticeContent } from "../_shared/legal-notice-content";
 import { SimplePage } from "../_shared/simple-page";
 
 export const metadata: Metadata = {
@@ -6,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <SimplePage title="Legal Notice" />;
+  return (
+    <SimplePage>
+      <LegalNoticeContent />
+    </SimplePage>
+  );
 }
