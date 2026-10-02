@@ -1,4 +1,3 @@
-import { PlaceholderInline } from "../_components/placeholder";
 import styles from "../page.module.css";
 
 const SITE = "http://www.bestredlightreview.com";
@@ -29,9 +28,6 @@ export function LegalNoticeContent() {
         Operator: Carthage Retail Co. LLC
         <br />
         Contact: <a href={MAILTO}>Hello@getyourapollo.com</a>
-        <br />
-        Mailing Address:{" "}
-        <PlaceholderInline label="Insert Carthage Retail Co. LLC’s registered business address" />
       </p>
 
       <h2 className={styles.sectionHeading}>Website Ownership</h2>
