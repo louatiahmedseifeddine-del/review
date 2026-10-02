@@ -2,7 +2,7 @@ import type { Product } from "../_components/product-section";
 import type { Scores } from "../_components/score-bars";
 
 const APOLLO_URL =
-  "https://www.getyourapollo.com/products/apollothera-red-light-mat";
+  "https://www.getyourapollo.com/pages/apollo-recovery-lp";
 
 const APOLLO_BUTTON = {
   kind: "button",

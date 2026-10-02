@@ -3,7 +3,7 @@ import type { Availability } from "../_components/availability-button";
 export const topPickButton: Availability = {
   kind: "button",
   label: "Check Availability at GetYourApollo.com →",
-  href: "https://www.getyourapollo.com/products/apollothera-red-light-mat",
+  href: "https://www.getyourapollo.com/pages/apollo-recovery-lp",
 };
 
 /** BLOCK E — final top-pick recommendation. */
