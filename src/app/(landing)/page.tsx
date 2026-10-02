@@ -67,8 +67,10 @@ export default function Page() {
       <div className={styles.article}>
         {/* BLOCK B — DISCLOSURE */}
         <p className={styles.disclosure}>
-          We independently evaluate each product based on publicly available
-          data. If you click on links on this page, we may earn a commission.
+          <a href="/privacy-policy">
+            We independently evaluate each product based on publicly available
+            data. If you click on links on this page, we may earn a commission.
+          </a>
         </p>
 
         {/* BLOCK C — ARTICLE OPENING */}
