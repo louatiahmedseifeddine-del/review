@@ -26,7 +26,7 @@ export function SiteHeader() {
     <header className="border-b border-line">
       <div className="mx-auto flex max-w-2xl items-baseline justify-between px-6 py-5">
         <Link
-          href="/"
+          href="/journal"
           className="font-display text-2xl tracking-tight text-ink"
         >
           Review

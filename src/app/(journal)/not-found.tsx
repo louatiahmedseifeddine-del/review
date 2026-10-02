@@ -11,7 +11,7 @@ export default function NotFound() {
         The essay may have moved, or the address is off by a letter.
       </p>
       <p className="mt-8">
-        <Link href="/" className="text-accent underline underline-offset-4">
+        <Link href="/journal" className="text-accent underline underline-offset-4">
           Back to the index
         </Link>
       </p>

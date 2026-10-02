@@ -1,5 +1,5 @@
-import { Placeholder } from "../best-red-light-therapy-mats/_components/placeholder";
-import styles from "../best-red-light-therapy-mats/page.module.css";
+import { Placeholder } from "../_components/placeholder";
+import styles from "../page.module.css";
 
 const MAILTO = "mailto:Hello@getyourapollo.com";
 

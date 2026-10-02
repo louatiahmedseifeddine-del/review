@@ -1,7 +1,7 @@
-import { PageFooter } from "../best-red-light-therapy-mats/_components/page-footer";
-import { Placeholder } from "../best-red-light-therapy-mats/_components/placeholder";
-import { footerContent } from "../best-red-light-therapy-mats/_content/footer";
-import styles from "../best-red-light-therapy-mats/page.module.css";
+import { PageFooter } from "../_components/page-footer";
+import { Placeholder } from "../_components/placeholder";
+import { footerContent } from "../_content/footer";
+import styles from "../page.module.css";
 
 /**
  * Shell for the footer's linked pages. Same header, footer, and typography as
