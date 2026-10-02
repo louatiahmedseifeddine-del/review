@@ -1,0 +1,19 @@
+/* Minimal reset for the landing root layout. The page supplies its own
+   typography and colors; this only clears default margins and paints the
+   white page background. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}

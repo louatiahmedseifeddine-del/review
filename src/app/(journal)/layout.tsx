@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Newsreader } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import "./globals.css";
+import "../globals.css";
 
 const display = Fraunces({
   subsets: ["latin"],

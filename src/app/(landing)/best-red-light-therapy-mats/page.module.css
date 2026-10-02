@@ -1,0 +1,607 @@
+/* Design system for the red light therapy comparison page (PROMPT 0).
+   Scoped to this page so the rest of the site is untouched. */
+
+.page {
+  background: #ffffff;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  padding: 0 20px;
+}
+
+.article {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* ---- Spacing rhythm ---- */
+
+.article p {
+  margin: 0 0 18px;
+}
+
+.section {
+  margin-top: 32px;
+}
+
+.reviewerSpacing {
+  margin-top: 24px;
+}
+
+/* ---- Block A: header ---- */
+
+.header {
+  padding: 20px 0 14px;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  height: 60px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.headerDivider {
+  border: 0;
+  border-top: 1px solid #e2e2e2;
+  margin: 0;
+}
+
+/* ---- Block B: disclosure ---- */
+
+.disclosure {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  margin: 16px 0 0;
+}
+
+.disclosure a {
+  color: inherit;
+}
+
+/* ---- Typography ---- */
+
+.headline {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.05;
+  text-align: left;
+  margin: 24px 0 0;
+}
+
+.updateDate {
+  font-size: 12px;
+  margin: 14px 0 0;
+}
+
+.imageCredit {
+  font-size: 12px;
+  margin: 6px 0 0;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+}
+
+.productHeading {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 36px 0 0;
+}
+
+.sectionHeading {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  margin: 32px 0 14px;
+}
+
+.sectionHeadingCentered {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin: 32px 0 16px;
+}
+
+.sponsoredLabel {
+  font-size: 14px;
+  font-style: italic;
+  color: #777777;
+  text-align: center;
+  margin: 14px 0 0;
+}
+
+.tagline {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  margin: 14px 0 0;
+}
+
+.inlineLabel {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* ---- Block 7: product evaluation summary ---- */
+
+.evaluation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  margin-top: 18px;
+}
+
+.evaluationImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.evaluationCol {
+  text-align: center;
+  color: #000a45;
+}
+
+.evaluationLabel {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.grade {
+  font-size: 84px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 6px 0 0;
+}
+
+.score {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 6px 0 0;
+}
+
+.stars {
+  color: #eaa84d;
+  font-size: 20px;
+  line-height: 1;
+  margin: 8px 0 0;
+}
+
+.starsTrack {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.starsEmpty {
+  color: #eaa84d;
+}
+
+.starsFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #eaa84d;
+}
+
+.reviewCount {
+  font-size: 13px;
+  color: #777777;
+  margin: 6px 0 0;
+}
+
+/* ---- Block 8: score bars ---- */
+
+.scoreBars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.scoreTrack {
+  position: relative;
+  height: 34px;
+  border-radius: 17px;
+  background: #e2e2e2;
+  overflow: hidden;
+}
+
+.scoreFill {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  border-radius: 14px;
+  background: #27c34b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.scoreLabel,
+.scoreValue {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+/* Placeholder state: no score supplied, so no fill is drawn. */
+.scoreTrackEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.scoreLabelEmpty,
+.scoreValueEmpty {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333333;
+  white-space: nowrap;
+}
+
+/* ---- Block 9: pros and cons ---- */
+
+.box {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 18px;
+}
+
+.boxHeader {
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 8px 12px;
+}
+
+.prosHeader {
+  background: #27c34b;
+}
+
+.consHeader {
+  background: #dd0025;
+}
+
+.prosBody {
+  background: #e4f5e8;
+}
+
+.consBody {
+  background: #fbe1e3;
+}
+
+.boxBody {
+  padding: 12px 14px;
+  text-align: left;
+}
+
+.boxList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.boxList li {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.boxList li + li {
+  margin-top: 12px;
+}
+
+.prosMark {
+  color: #1ea93c;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.consMark {
+  color: #dd0025;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ---- Block 10: availability buttons ---- */
+
+.buttonRow {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-block;
+  background: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.availabilityText {
+  text-align: center;
+  margin-top: 18px;
+}
+
+/* ---- Specifications ---- */
+
+.specs {
+  margin-top: 14px;
+  overflow-wrap: break-word;
+}
+
+/* ---- Block F: top-pick benefits ---- */
+
+.benefits {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 18px;
+}
+
+.benefitsHeader {
+  background: #27c34b;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 12px;
+}
+
+.benefitsBody {
+  background: #e4f5e8;
+  padding: 12px 14px;
+}
+
+.benefitsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.benefitsList li {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.benefitsList li + li {
+  margin-top: 12px;
+}
+
+/* ---- Block I: reviewer block ---- */
+
+.reviewer {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.reviewerPhoto {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 28%;
+  flex-shrink: 0;
+}
+
+.reviewerName {
+  font-weight: 700;
+  margin: 0;
+}
+
+.reviewerBio {
+  margin: 6px 0 0;
+}
+
+/* ---- Block H: FAQ ---- */
+
+.faqList {
+  margin-top: 16px;
+}
+
+.faqItem + .faqItem {
+  margin-top: 12px;
+}
+
+.faqQuestion {
+  background: #f2f2f2;
+  padding: 12px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.faqQuestion::-webkit-details-marker {
+  display: none;
+}
+
+.faqChevron {
+  flex-shrink: 0;
+  font-size: 12px;
+  transition: none;
+}
+
+.faqItem[open] .faqChevron {
+  transform: rotate(180deg);
+}
+
+.faqAnswer {
+  padding: 12px 14px 0;
+}
+
+.faqAnswer p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- Block J: footer ---- */
+
+.footer {
+  margin-top: 32px;
+  border-top: 1px solid #e2e2e2;
+  padding: 24px 0;
+}
+
+.footerInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.footerHeading {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.footerList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footerList li + li {
+  margin-top: 8px;
+}
+
+.footerList a {
+  color: #0645ad;
+  text-decoration: underline;
+}
+
+/* Quick Links column only. */
+.quickLinks {
+  text-align: center;
+}
+
+.quickLinks .footerHeading {
+  text-align: center;
+}
+
+/* ---- Placeholders (development only) ---- */
+
+.placeholder {
+  border: 1px dashed #b4b4b4;
+  background: #f7f7f7;
+  color: #666666;
+  font-size: 12px;
+  padding: 10px 12px;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.placeholderInline {
+  border: 1px dashed #b4b4b4;
+  background: #f7f7f7;
+  color: #666666;
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+.placeholderImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #b4b4b4;
+  background: #f7f7f7;
+  color: #666666;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* ---- Mobile ---- */
+
+@media (max-width: 760px) {
+  .page {
+    padding: 0 16px;
+  }
+
+  .headline {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .productHeading {
+    font-size: 23px;
+  }
+
+  .grade {
+    font-size: 56px;
+  }
+
+  .score {
+    font-size: 30px;
+  }
+
+  .evaluationLabel {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .evaluation {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .evaluationImageCell {
+    grid-column: 1 / -1;
+  }
+
+  .grade {
+    font-size: 48px;
+  }
+
+  .score {
+    font-size: 26px;
+  }
+
+  .footerInner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Lists on the footer-linked pages ---- */
+
+.legalList {
+  margin: 0 0 18px;
+  padding-left: 22px;
+}
+
+.legalList li + li {
+  margin-top: 8px;
+}
