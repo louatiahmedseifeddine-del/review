@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ContactContent } from "../_shared/contact-content";
 import { SimplePage } from "../_shared/simple-page";
 
 export const metadata: Metadata = {
@@ -6,5 +7,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <SimplePage title="Contact us" />;
+  return (
+    <SimplePage title="Contact us">
+      <ContactContent />
+    </SimplePage>
+  );
 }
