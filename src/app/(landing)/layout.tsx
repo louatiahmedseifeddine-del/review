@@ -1,3 +1,4 @@
+import { MetaPixel } from "./_shared/meta-pixel";
 import "./layout.css";
 
 /** Root layout for the landing pages: no navigation, no site chrome. */
@@ -8,7 +9,10 @@ export default function LandingLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <MetaPixel />
+      </body>
     </html>
   );
 }
