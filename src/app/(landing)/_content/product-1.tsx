@@ -199,15 +199,40 @@ export const productOne: Product = {
   ],
 
   conclusion: (
-    <p>
-      <strong>
-        ApolloThera is our pick for a straightforward, guided neck-to-hip
-        recovery routine.
-      </strong>{" "}
-      Its dual wavelengths, flexible design, and included personalized protocol
-      make it a compelling option for buyers who value everyday usability and
-      support alongside the device.
-    </p>
+    <>
+      <p>
+        The <strong>ApolloThera Recovery Mat</strong> earns our top pick by
+        combining{" "}
+        <strong>
+          dual-wavelength technology, substantial light output, and practical
+          neck-to-hip coverage
+        </strong>{" "}
+        in one easy-to-use design. For anyone seeking{" "}
+        <strong>natural pain relief and faster recovery</strong>, it brings red
+        and near-infrared light therapy into the comfort of home—without
+        repeated clinic visits.
+      </p>
+      <p>
+        <strong>
+          The standout bonus is the Free Personalized Recovery Protocol.
+        </strong>{" "}
+        It answers the question that buying a mat alone leaves open:{" "}
+        <strong>“How should I use it for my needs?”</strong> With personalized
+        guidance to help you get started and stay consistent, the package gives
+        you both{" "}
+        <strong>the device and a clear plan for using it</strong>.
+      </p>
+      <p>
+        Add{" "}
+        <strong>50% OFF, Free Recovery Cream, and Free Shipping</strong>, and
+        ApolloThera offers a compelling combination of{" "}
+        <strong>technology, simplicity, and personalized support</strong>.
+        That’s what makes it{" "}
+        <strong>our top pick—and an offer worth checking while it’s
+        available</strong>
+        .
+      </p>
+    </>
   ),
 
   availabilityFinal: APOLLO_BUTTON,
