@@ -82,7 +82,7 @@ export const productFive: Product = {
   priceCheck: (
     <>
       <p>
-        As of our latest check on <strong>June 8th, 2026</strong>, this
+        As of our latest check on <strong>October 1st, 2026</strong>, this
         <strong>
           {" "}
           Red and Infrared Light Therapy Mat is listed at $739

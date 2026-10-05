@@ -99,7 +99,7 @@ export const productOne: Product = {
   priceCheck: (
     <>
       <p>
-        As of our last check on June 8th, 2026, the ApolloThera Mat retailed
+        As of our last check on October 1st, 2026, the ApolloThera Mat retailed
         for $199.99 placing it at the upper end of the red-light therapy mat
         market.{" "}
         <strong>
