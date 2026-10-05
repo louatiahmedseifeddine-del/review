@@ -91,31 +91,33 @@ export default function Page() {
 
         <div style={{ marginTop: "18px" }}>
           <p>
-            Finding a red light therapy mat is easy.{" "}
-            <strong>Knowing which one is worth your money is harder.</strong>
-          </p>
-          <p>
-            With prices ranging from a few hundred dollars to well over $1,000,
-            the options can quickly become overwhelming. Different wavelengths.
-            Different sizes. Different power outputs. And every brand promising
-            more than the last.
-          </p>
-          <p>
+            Whether you’re seeking{" "}
             <strong>
-              So what actually matters—and which mat makes the most sense for
-              your daily routine?
+              natural pain relief, faster muscle recovery, or a drug-free
+              approach to chronic inflammation
+            </strong>
+            , red light therapy mats offer a way to explore light-based
+            recovery from the comfort of home. The challenge is finding the
+            right one for your needs.
+          </p>
+          <p>
+            With countless options promising everything from wrinkle reduction
+            to deep tissue recovery, it’s easy to feel overwhelmed.{" "}
+            <strong>
+              Every mat promises benefits—but the promises alone won’t tell you
+              which to choose.
             </strong>
           </p>
           <p>
-            This comparison looks at five red and near-infrared light therapy
-            mats across the details that matter when buying: wavelengths,
-            coverage, power specifications, ease of use, price, warranty, and
-            customer support.
-          </p>
-          <p>
-            Whether you want a simple evening routine or a larger full-body
-            setup, here’s how the options compare—and what to know before
-            choosing.
+            That’s why we analysed five leading red light therapy mats,
+            examining{" "}
+            <strong>
+              LED quality, wavelengths, coverage, power output, and reported
+              user experiences
+            </strong>
+            . Below, we break down where each mat stands out, where it falls
+            short, and who it’s best suited for—so you can choose with a clear
+            understanding of the differences.
           </p>
           <p>
             <strong>
