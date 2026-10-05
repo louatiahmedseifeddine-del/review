@@ -79,7 +79,7 @@ export default function Page() {
           Relief &amp; Recovery in 2026
         </h1>
 
-        <p className={styles.updateDate}>Updated on June 8th, 2026</p>
+        <p className={styles.updateDate}>Updated on October 1st, 2026</p>
 
         <img
           className={styles.heroImage}
