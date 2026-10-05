@@ -11,14 +11,17 @@ const APOLLO_BUTTON = {
 } as const;
 
 const specifications: [string, string][] = [
-  ["Wavelengths:", "660nm + 850nm"],
-  ["LED configuration:", "380 triple-chip modules / 1,140 individual chips"],
-  ["Reported irradiance:", "146 mW/cm² at 0 inches"],
-  ["Power:", "60W"],
+  ["LEDs:", "380 triple-chip modules / 1,140 individual chips"],
+  ["Reported Irradiance:", "146mW/cm² at the surface"],
+  ["Wavelengths:", "660nm red + 850nm near-infrared"],
   ["Dimensions:", "Approximately 36.2 × 15.7 inches"],
-  ["Coverage:", "Neck to hip"],
-  ["Session length:", "10–20 minutes"],
-  ["Design:", "Flexible mat with wired controller"],
+  ["Power:", "60W"],
+  ["Session Length:", "10–20 minutes"],
+  ["Coverage:", "Neck, shoulders, back, and hips"],
+  [
+    "Included:",
+    "Free Personalized Recovery Protocol, Free Recovery Cream, and Free Shipping",
+  ],
 ];
 
 const scores: Scores = {
@@ -51,81 +54,106 @@ export const productOne: Product = {
   whyWeLoveIt: (
     <>
       <p>
-        The <strong>ApolloThera Recovery Mat</strong> brings together
-        dual-wavelength technology, practical neck-to-hip coverage, and a
-        simple routine that fits into everyday life.
+        If you’re looking for{" "}
+        <strong>
+          natural pain relief and faster recovery without repeated clinic
+          visits
+        </strong>
+        , the <strong>ApolloThera Recovery Mat</strong> brings red and
+        near-infrared light into a simple routine you can follow{" "}
+        <strong>from the comfort of home</strong>.
       </p>
       <p>
-        Its <strong>660nm red light and 850nm near-infrared light</strong> are
-        delivered through{" "}
-        <strong>380 triple-chip LED modules—1,140 individual LED chips</strong>
-        . With a reported irradiance of{" "}
-        <strong>146 mW/cm² at the surface</strong>, it offers substantial
-        output in a flexible format designed for home use.
+        Its appeal starts with{" "}
+        <strong>
+          two complementary wavelengths: 660nm red light and 850nm
+          near-infrared light
+        </strong>
+        . Together, they give you a focused light therapy setup for the areas
+        you want to prioritise—without complicated equipment or a lengthy
+        setup.
       </p>
       <p>
-        Place it on a bed, sofa, or recliner, position it against the intended
-        area, and use the controller to start a{" "}
-        <strong>10–20-minute session</strong>. Its approximately{" "}
-        <strong>36.2 × 15.7-inch footprint</strong> covers the neck, shoulders,
-        back, and hips without requiring a large permanent setup.
+        With{" "}
+        <strong>
+          380 triple-chip LED modules—1,140 individual LED chips—and a reported
+          irradiance of 146mW/cm² at the surface
+        </strong>
+        , ApolloThera combines substantial light output with a{" "}
+        <strong>flexible, practical design</strong>.
+      </p>
+      <p>
+        The approximately{" "}
+        <strong>
+          36.2 × 15.7-inch mat covers the neck, shoulders, back, and hips
+        </strong>
+        . Place it on your bed, sofa, or recliner, position it against the
+        intended area, and start a <strong>10–20-minute session</strong> using
+        the controller. Its compact footprint makes it easy to fit into
+        everyday life and store between sessions.
       </p>
       <p>
         <strong>
-          What makes ApolloThera stand out is the support included with the
-          mat.
+          What makes ApolloThera stand out is the guidance included with your
+          purchase.
         </strong>{" "}
-        The offer combines a{" "}
-        <strong>Free Personalized Recovery Protocol</strong>,{" "}
-        <strong>Free Recovery Cream</strong>, and{" "}
-        <strong>Free Shipping</strong>, giving buyers a guided routine
-        alongside the device.
+        The <strong>Free Personalized Recovery Protocol</strong> helps you
+        understand how to use the mat and build a consistent routine.{" "}
+        <strong>Free Recovery Cream and Free Shipping</strong> complete the
+        offer.
       </p>
     </>
   ),
 
   whoItsFor: (
     <p>
-      ApolloThera is a practical choice for people who want{" "}
+      ApolloThera is particularly suited to{" "}
       <strong>
-        neck-to-hip coverage, straightforward controls, and guidance on
-        building a consistent at-home routine
+        active individuals, people exploring at-home options for everyday
+        discomfort, and anyone seeking a manageable recovery routine
       </strong>
-      . Its compact size also suits buyers who want something easy to position
-      and store.
+      . Its{" "}
+      <strong>
+        neck-to-hip coverage, straightforward controls, and personalized
+        guidance
+      </strong>{" "}
+      make it appealing for users who want support getting started and staying
+      consistent.
     </p>
   ),
 
   priceCheck: (
     <>
       <p>
-        As of our last check on October 1st, 2026, the ApolloThera Mat retailed
-        for $199.99 placing it at the upper end of the red-light therapy mat
-        market.{" "}
-        <strong>
-          What sets this offer apart is the Free Personalized Recovery Protocol
-          included with the purchase—giving customers guidance on how to use
-          the mat and build a consistent recovery routine.
-        </strong>{" "}
-        With Free Recovery Cream and Free Shipping also included, the price
-        covers more than the device alone.
+        <strong>As of our last check on October 1st, 2026</strong>, the{" "}
+        <strong>ApolloThera Recovery Mat retailed for $199.99</strong>, with an
+        advertised <strong>50% OFF offer</strong>.
       </p>
       <p>
-        The advertised offer includes <strong>50% OFF</strong>, a{" "}
-        <strong>Free Personalized Recovery Protocol</strong>,{" "}
-        <strong>Free Recovery Cream</strong>, and{" "}
-        <strong>Free Shipping</strong>.
+        With{" "}
+        <strong>
+          dual wavelengths, 1,140 individual LED chips, and a Free Personalized
+          Recovery Protocol
+        </strong>
+        , the package offers more than the device alone: it combines the mat
+        with <strong>guidance for building yourus</strong>{" "}
+        <strong>Free Recovery Cream and Free Shipping</strong>.
       </p>
-      <p>Click below to check the current price and availability.</p>
+      <p>
+        To confirm whether the offer is still available, click the{" "}
+        <strong>“Check Availability”</strong> button below. Prices and
+        availability may change.
+      </p>
     </>
   ),
 
   specifications: (
     <>
-      {specifications.map(([label, value]) => (
-        <div key={label}>
-          {label} <strong>{value}</strong>
-        </div>
+      {specifications.map(([label, value], index) => (
+        <span key={label}>
+          {index > 0 ? " | " : null}
+          <strong>{label}</strong> {value}
+        </span>
       ))}
     </>
   ),
