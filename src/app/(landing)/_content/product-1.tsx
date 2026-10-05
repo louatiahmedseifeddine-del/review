@@ -190,12 +190,11 @@ export const productOne: Product = {
 
   cons: [
     <>
-      <strong>Not a full-body mat:</strong> its coverage does not extend from
-      head to feet.
+      <strong>Online only:</strong> not available in physical retail stores.
     </>,
     <>
-      <strong>Requires a power connection:</strong> the mat uses a cable and
-      wired controller.
+      <strong>Limited availability:</strong> already sold out twice this
+      year—check availability while the 50% OFF bundle is available.
     </>,
   ],
 
