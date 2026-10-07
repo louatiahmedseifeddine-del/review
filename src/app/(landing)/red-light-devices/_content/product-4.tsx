@@ -74,8 +74,8 @@ export const productFour: Product = {
         handheld use, with standard guidance recommending{" "}
         <strong>10-minute sessions at 6–12 inches</strong>. The Joovv app
         allows mode changes and session customization, while an{" "}
-        <strong>optional charging dock</strong> can support hands-ing for
-        suitable areas.
+        <strong>optional charging dock</strong> can support hands-free
+        positioning for suitable areas.
       </p>
       <p>
         However,{" "}
