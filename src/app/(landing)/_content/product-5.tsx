@@ -97,7 +97,7 @@ export const productFive: Product = {
         <strong>
           3,840 LEDs, 120 mW/cm² output, and full-body dimensions
         </strong>{" "}
-        provide considerably more hardware than most small t
+        provide considerably more hardware.
       </p>
     </>
   ),
