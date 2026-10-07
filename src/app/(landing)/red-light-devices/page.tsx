@@ -27,7 +27,7 @@ import styles from "../page.module.css";
 
 export const metadata: Metadata = {
   title:
-    "The 5 Best Red & Infrared Light Therapy Mats for At-Home Pain Relief & Recovery in 2026",
+    "The 5 Best Red & Infrared Light Therapy Devices for At-Home Pain Relief & Recovery in 2026",
 };
 
 // ---------------------------------------------------------------------------
@@ -75,7 +75,7 @@ export default function Page() {
 
         {/* BLOCK C — ARTICLE OPENING */}
         <h1 className={styles.headline}>
-          The 5 Best Red &amp; Infrared Light Therapy Mats for At-Home Pain
+          The 5 Best Red &amp; Infrared Light Therapy Devices for At-Home Pain
           Relief &amp; Recovery in 2026
         </h1>
 
@@ -96,7 +96,7 @@ export default function Page() {
               natural pain relief, faster muscle recovery, or a drug-free
               approach to chronic inflammation
             </strong>
-            , red light therapy mats offer a way to explore light-based
+            , red light therapy devices offer a way to explore light-based
             recovery from the comfort of home. The challenge is finding the
             right one for your needs.
           </p>
@@ -104,18 +104,18 @@ export default function Page() {
             With countless options promising everything from wrinkle reduction
             to deep tissue recovery, it’s easy to feel overwhelmed.{" "}
             <strong>
-              Every mat promises benefits—but the promises alone won’t tell you
-              which to choose.
+              Every device promises benefits—but the promises alone won’t tell
+              you which to choose.
             </strong>
           </p>
           <p>
-            That’s why we analysed five leading red light therapy mats,
+            That’s why we analysed five leading red light therapy devices,
             examining{" "}
             <strong>
-              LED quality, wavelengths, coverage, power output, and reported
+              technology, wavelengths, coverage, power output, and reported
               user experiences
             </strong>
-            . Below, we break down where each mat stands out, where it falls
+            . Below, we break down where each device stands out, where it falls
             short, and who it’s best suited for—so you can choose with a clear
             understanding of the differences.
           </p>
