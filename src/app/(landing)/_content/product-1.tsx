@@ -136,7 +136,7 @@ export const productOne: Product = {
           Recovery Protocol
         </strong>
         , the package offers more than the device alone: it combines the mat
-        with <strong>guidance for building yourus</strong>{" "}
+        with <strong>guidance for building your routine</strong>, plus{" "}
         <strong>Free Recovery Cream and Free Shipping</strong>.
       </p>
       <p>
