@@ -2,12 +2,12 @@ import type { Product } from "../../_components/product-section";
 import type { Scores } from "../../_components/score-bars";
 
 const scores: Scores = {
-  Effectiveness: 8.8,
-  "Ease of Use": 8.6,
-  "Quality & Design": 8.7,
-  "Safety & Certifications": 8.5,
-  "Value for Money": 8.3,
-  "Customer Satisfaction": 8.8,
+  Effectiveness: 8.4,
+  "Ease of Use": 8.2,
+  "Quality & Design": 8.3,
+  "Safety & Certifications": 8.1,
+  "Value for Money": 7.8,
+  "Customer Satisfaction": 8.4,
 };
 
 const specifications: [string, string][] = [
