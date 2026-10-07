@@ -113,7 +113,7 @@ export const productTwo: Product = {
         <strong>localized, wearable sessions</strong> are your main priority.
       </p>
       <p>
-        The product page advertis<strong>-year warranty</strong> and{" "}
+        The product page advertises a <strong>one-year warranty</strong> and{" "}
         <strong>30-day satisfaction guarantee</strong>, subject to usage and
         return conditions. Shipping costs are excluded from refunds, and
         customers generally cover return shipping for unwanted items.
