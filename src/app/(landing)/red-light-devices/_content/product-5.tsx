@@ -1,5 +1,14 @@
 import type { Product } from "../../_components/product-section";
-import { EMPTY_SCORES } from "../../_components/score-bars";
+import type { Scores } from "../../_components/score-bars";
+
+const scores: Scores = {
+  Effectiveness: 8.8,
+  "Ease of Use": 8.6,
+  "Quality & Design": 8.7,
+  "Safety & Certifications": 8.5,
+  "Value for Money": 8.3,
+  "Customer Satisfaction": 8.8,
+};
 
 const specifications: [string, string][] = [
   [
@@ -144,8 +153,7 @@ export const productFive: Product = {
   ),
 
   availabilityMid: { kind: "none" },
-  // Reserved: scores are supplied separately, not carried over.
-  scores: EMPTY_SCORES,
+  scores,
 
   pros: [
     <>
