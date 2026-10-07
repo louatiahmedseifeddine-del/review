@@ -34,11 +34,11 @@ export const productThree: Product = {
   sponsoredLabel: null,
   tagline:
     "“An expandable red and near-infrared light panel for a dedicated home recovery setup.”",
-  // Slot reserved for the Joovv assets. The previous product's rating,
-  // review count, and test result are deliberately not carried over.
+  // Supplied as a finished summary image — displayed as-is, not recreated.
   evaluation: {
-    kind: "pending",
-    label: "JOOVV SOLO 3.0 IMAGE + RATING GRAPHIC",
+    kind: "image",
+    src: "/joovv-solo-evaluation.png",
+    alt: "Joovv Solo 3.0. Test Result: A-. Rating: 9.0/10. (2416 Reviews)",
   },
   availabilityTop: { kind: "text", text: <strong>Available On Amazon</strong> },
 
