@@ -82,7 +82,7 @@ export const benefits: React.ReactNode[] = [
     <strong>380 LED modules containing 1,140 individual chips</strong>.
   </>,
   <>
-    <strong>Prip coverage:</strong> Accommodates the{" "}
+    <strong>Practical coverage:</strong> Accommodates the{" "}
     <strong>neck, shoulders, back, and hips</strong> in one setup.
   </>,
   <>
