@@ -1,5 +1,14 @@
 import type { Product } from "../../_components/product-section";
-import { EMPTY_SCORES } from "../../_components/score-bars";
+import type { Scores } from "../../_components/score-bars";
+
+const scores: Scores = {
+  Effectiveness: 9.2,
+  "Ease of Use": 9.4,
+  "Quality & Design": 9.6,
+  "Safety & Certifications": 9.3,
+  "Value for Money": 8.8,
+  "Customer Satisfaction": 9.5,
+};
 
 const specifications: [string, string][] = [
   ["Configuration:", "3 wearable modules"],
@@ -124,8 +133,7 @@ export const productTwo: Product = {
   ),
 
   availabilityMid: { kind: "none" },
-  // Reserved: the previous product's scores are not published as Kineon's.
-  scores: EMPTY_SCORES,
+  scores,
 
   pros: [
     <>
