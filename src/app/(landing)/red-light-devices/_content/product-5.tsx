@@ -192,8 +192,8 @@ export const productFive: Product = {
       require a separate purchase.
     </>,
     <>
-      <strong>Higher checked price than ApolloThera:</strong> best justified
-      when heat and vibration are important purchasing priorities.
+      <strong>Premium price:</strong> a higher price point for a heating
+      device.
     </>,
   ],
 
