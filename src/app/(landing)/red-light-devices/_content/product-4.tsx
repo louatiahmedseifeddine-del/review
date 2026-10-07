@@ -24,7 +24,7 @@ const specifications: [string, string][] = [
 
 export const productFour: Product = {
   number: 4,
-  name: "Redjuvi - Full Body Infrared Light Therapy Mat",
+  name: "Joovv Go 2.0",
   sponsoredLabel: null,
   tagline: "“A premium wellness mat with advanced multi-spectrum technology”",
   // Supplied as a finished summary image — displayed as-is, not recreated.

@@ -25,7 +25,7 @@ const specifications: [string, string][] = [
 
 export const productThree: Product = {
   number: 3,
-  name: "Swirise Red & Near-Infrared Light Therapy Mat Pro",
+  name: "Joovv Solo 3.0",
   sponsoredLabel: null,
   tagline: "“A feature-rich mat with multi-wavelength versatility”",
   // Supplied as a finished summary image — displayed as-is, not recreated.

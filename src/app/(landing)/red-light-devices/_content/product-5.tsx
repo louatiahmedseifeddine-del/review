@@ -12,7 +12,7 @@ const scores: Scores = {
 
 export const productFive: Product = {
   number: 5,
-  name: "Megelin Red and Infrared Light Therapy Mat",
+  name: "Therabody ThermBack LED",
   sponsoredLabel: null,
   tagline:
     "“High-coverage full-body red and near-infrared therapy with an exceptionally high LED count.”",

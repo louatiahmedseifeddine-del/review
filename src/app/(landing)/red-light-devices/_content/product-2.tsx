@@ -24,7 +24,7 @@ const specifications: [string, string][] = [
 
 export const productTwo: Product = {
   number: 2,
-  name: "HigherDOSE Full Body Red Light Mat",
+  name: "Kineon MOVE+",
   sponsoredLabel: null,
   tagline: "“A premium wellness brand and influencer favourite”",
   // Supplied as a finished summary image — displayed as-is, not recreated.

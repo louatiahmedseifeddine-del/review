@@ -121,7 +121,7 @@ export default function Page() {
           </p>
           <p>
             <strong>
-              These are our top 5 red light therapy mats for 2026:
+              These are our top 5 red light therapy devices for 2026:
             </strong>
           </p>
         </div>
