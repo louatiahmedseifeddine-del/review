@@ -164,8 +164,9 @@ export const productTwo: Product = {
       require repositioning.
     </>,
     <>
-      <strong>Higher upfront cost:</strong> the checked $399 price is higher
-      than ApolloThera’s.
+      <strong>Higher upfront cost:</strong> the checked $399 price is double
+      ApolloThera’s $199.99, and the $699 list price is more than three times
+      it.
     </>,
     <>
       <strong>Fit may require an extra accessory:</strong> the extender strap is
