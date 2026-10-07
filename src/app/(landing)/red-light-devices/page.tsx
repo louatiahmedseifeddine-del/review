@@ -166,10 +166,10 @@ export default function Page() {
             {buyingGuideHeading}
           </h2>
           {buyingGuide.map((item) => (
-            <p key={item.label}>
-              <span className={styles.inlineLabel}>{item.label}</span>{" "}
+            <div key={item.label}>
+              <p className={styles.inlineLabel}>{item.label}</p>
               {item.body}
-            </p>
+            </div>
           ))}
         </section>
 
