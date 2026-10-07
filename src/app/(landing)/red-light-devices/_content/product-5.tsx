@@ -48,7 +48,7 @@ export const productFive: Product = {
     src: "/therabody-evaluation.png",
     alt: "Therabody ThermBack LED. Test Result: B. Rating: 8.2/10. (1023 Reviews)",
   },
-  availabilityTop: { kind: "text", text: <strong>Available On Amazon</strong> },
+  availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
 
   whyWeLoveIt: (
     <>

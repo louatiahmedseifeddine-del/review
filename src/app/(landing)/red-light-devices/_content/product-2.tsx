@@ -87,7 +87,7 @@ export const productTwo: Product = {
       <strong>
         Best suited for users who want a focused, wearable recovery device
       </strong>{" "}
-      for a small particular joint or muscle area and value{" "}
+      for a specific joint or small muscle area and value{" "}
       <strong>cordless convenience</strong>. Less ideal for those seeking{" "}
       <strong>broader coverage in a single resting session</strong> or a
       lower-cost introduction to at-home red light therapy.
@@ -164,8 +164,9 @@ export const productTwo: Product = {
       require repositioning.
     </>,
     <>
-      <strong>Higher upfront cost:</strong> a $699 list price is expensive for
-      a device that treats one area at a time.
+      <strong>Higher upfront cost:</strong> the checked $399 price, reduced
+      from the original $699 price, is higher than ApolloThera’s $199.99 for a
+      device that treats one selected area at a time.
     </>,
     <>
       <strong>Fit may require an extra accessory:</strong> the extender strap is

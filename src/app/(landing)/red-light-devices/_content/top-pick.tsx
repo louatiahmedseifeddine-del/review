@@ -12,7 +12,7 @@ export const topPickHeading = "Our Top Pick: ApolloThera Recovery Mat";
 export const topPickBody = (
   <>
     <p>
-      Choosing the right <strong>red light therapy mat in 2026</strong> means
+      Choosing the right <strong>red light therapy device in 2026</strong> means
       finding the right balance between{" "}
       <strong>
         wavelengths, power output, coverage, everyday usability, and price
@@ -22,7 +22,7 @@ export const topPickBody = (
       together in one practical package.
     </p>
     <p>
-      It combines <strong>660nm red light and 850nm near-infrared light</strong>{" "}
+      It combines <strong>660 nm red light and 850 nm near-infrared light</strong>{" "}
       through{" "}
       <strong>
         380 triple-chip LED modules — 1,140 individual LED chips
@@ -51,7 +51,8 @@ export const topPickBody = (
       <strong>Free Personalized Recovery Protocol</strong>,{" "}
       <strong>Free Recovery Cream</strong>, and <strong>Free Shipping</strong>.
       That makes it an accessible option for buyers who want practical coverage
-      and included guidance without a premium full-body price.
+      and included guidance without the higher upfront cost of the other
+      devices reviewed.
     </p>
     <p>
       For those seeking{" "}
@@ -70,7 +71,7 @@ export const benefitsHeading = "Benefits of the ApolloThera Recovery Mat";
 export const benefits: React.ReactNode[] = [
   <>
     <strong>Dual-wavelength technology:</strong> Combines{" "}
-    <strong>660nm red light and 850nm near-infrared light</strong> in one
+    <strong>660 nm red light and 850 nm near-infrared light</strong> in one
     flexible mat.
   </>,
   <>

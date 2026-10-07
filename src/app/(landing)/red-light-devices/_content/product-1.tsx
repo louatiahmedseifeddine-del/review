@@ -12,10 +12,10 @@ const APOLLO_BUTTON = {
 
 const specifications: [string, string][] = [
   ["LEDs:", "380 triple-chip modules / 1,140 individual chips"],
-  ["Reported Irradiance:", "146mW/cm² at the surface"],
-  ["Wavelengths:", "660nm red + 850nm near-infrared"],
+  ["Reported Irradiance:", "146 mW/cm² at the surface"],
+  ["Wavelengths:", "660 nm red + 850 nm near-infrared"],
   ["Dimensions:", "Approximately 36.2 × 15.7 inches"],
-  ["Power:", "60W"],
+  ["Power:", "60 W"],
   ["Session Length:", "10–20 minutes"],
   ["Coverage:", "Neck, shoulders, back, and hips"],
   [
@@ -66,18 +66,18 @@ export const productOne: Product = {
       <p>
         Its appeal starts with{" "}
         <strong>
-          two complementary wavelengths: 660nm red light and 850nm
+          two complementary wavelengths: 660 nm red light and 850 nm
           near-infrared light
         </strong>
         . Together, they give you a focused light therapy setup for the areas
-        you want to prioritise—without complicated equipment or a lengthy
+        you want to prioritize—without complicated equipment or a lengthy
         setup.
       </p>
       <p>
         With{" "}
         <strong>
           380 triple-chip LED modules—1,140 individual LED chips—and a reported
-          irradiance of 146mW/cm² at the surface
+          irradiance of 146 mW/cm² at the surface
         </strong>
         , ApolloThera combines substantial light output with a{" "}
         <strong>flexible, practical design</strong>.
@@ -163,7 +163,7 @@ export const productOne: Product = {
 
   pros: [
     <>
-      <strong>Dual wavelengths:</strong> combines 660nm red and 850nm
+      <strong>Dual wavelengths:</strong> combines 660 nm red and 850 nm
       near-infrared light.
     </>,
     <>

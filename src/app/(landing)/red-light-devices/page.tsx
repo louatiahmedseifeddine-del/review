@@ -79,7 +79,7 @@ export default function Page() {
           Relief &amp; Recovery in 2026
         </h1>
 
-        <p className={styles.updateDate}>Updated on October 1st, 2026</p>
+        <p className={styles.updateDate}>Updated on October 7th, 2026</p>
 
         <img
           className={styles.heroImage}
@@ -109,7 +109,7 @@ export default function Page() {
             </strong>
           </p>
           <p>
-            That’s why we analysed five leading red light therapy devices,
+            That’s why we analyzed five leading red light therapy devices,
             examining{" "}
             <strong>
               technology, wavelengths, coverage, power output, and reported

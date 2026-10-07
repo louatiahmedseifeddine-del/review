@@ -39,7 +39,7 @@ export const productFour: Product = {
     src: "/joovv-go-evaluation.png",
     alt: "Joovv Go 2.0. Test Result: B. Rating: 8.2/10. (1916 Reviews)",
   },
-  availabilityTop: { kind: "text", text: <strong>Available On Amazon</strong> },
+  availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
 
   whyWeLoveIt: (
     <>
@@ -48,7 +48,7 @@ export const productFour: Product = {
         <strong>compact, portable approach to recovery</strong>, bringing red
         and near-infrared light into a rechargeable handheld device. For users
         who want to focus on{" "}
-        <strong>a small area at home or while travelling</strong>, its cordless
+        <strong>a small area at home or while traveling</strong>, its cordless
         design and included travel case make it convenient to carry and store.
       </p>
       <p>
@@ -148,7 +148,7 @@ export const productFour: Product = {
   pros: [
     <>
       <strong>Compact and portable:</strong> convenient for targeted use at
-      home or while travelling.
+      home or while traveling.
     </>,
     <>
       <strong>Cordless operation:</strong> rechargeable battery supports
@@ -200,7 +200,7 @@ export const productFour: Product = {
         <strong>
           portable red and near-infrared light for a selected area
         </strong>
-        , particularly when travelling or working with limited storage space.
+        , particularly when traveling or working with limited storage space.
       </p>
       <p>
         For those seeking{" "}

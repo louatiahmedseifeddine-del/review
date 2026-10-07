@@ -40,7 +40,7 @@ export const productThree: Product = {
     src: "/joovv-solo-evaluation.png",
     alt: "Joovv Solo 3.0. Test Result: A-. Rating: 9.0/10. (2416 Reviews)",
   },
-  availabilityTop: { kind: "text", text: <strong>Available On Amazon</strong> },
+  availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
 
   whyWeLoveIt: (
     <>
@@ -170,8 +170,8 @@ export const productThree: Product = {
       duration.
     </>,
     <>
-      <strong>Two-year limited warranty:</strong> longer included warranty
-      coverage than the other devices in this comparison.
+      <strong>Two-year limited warranty:</strong> includes two years of
+      limited warranty coverage.
     </>,
   ],
 
