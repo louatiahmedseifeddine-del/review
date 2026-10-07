@@ -30,11 +30,11 @@ export const productTwo: Product = {
   sponsoredLabel: null,
   tagline:
     "“Targeted red light and near-infrared laser technology in a cordless, wearable design.”",
-  // Slot reserved for the Kineon assets. The previous product's rating,
-  // review count, and test result are deliberately not carried over.
+  // Supplied as a finished summary image — displayed as-is, not recreated.
   evaluation: {
-    kind: "pending",
-    label: "KINEON MOVE+ IMAGE + RATING GRAPHIC",
+    kind: "image",
+    src: "/kineon-evaluation.png",
+    alt: "Kineon MOVE+. Test Result: A-. Rating: 9.0/10. (3591 Reviews)",
   },
   availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
 
