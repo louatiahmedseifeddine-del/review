@@ -50,7 +50,7 @@ export function ScoreBars({ scores }: { scores: Scores }) {
               style={{ width: `calc(${Number(((score / 10) * 100).toFixed(2))}% - 6px)` }}
             >
               <span className={styles.scoreLabel}>{category}</span>
-              <span className={styles.scoreValue}>{score}/10</span>
+              <span className={styles.scoreValue}>{score.toFixed(1)}/10</span>
             </div>
           </div>
         );

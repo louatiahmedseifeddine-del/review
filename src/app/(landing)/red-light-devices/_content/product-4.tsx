@@ -1,5 +1,14 @@
 import type { Product } from "../../_components/product-section";
-import { EMPTY_SCORES } from "../../_components/score-bars";
+import type { Scores } from "../../_components/score-bars";
+
+const scores: Scores = {
+  Effectiveness: 9.0,
+  "Ease of Use": 9.3,
+  "Quality & Design": 9.1,
+  "Safety & Certifications": 9.4,
+  "Value for Money": 8.9,
+  "Customer Satisfaction": 9.2,
+};
 
 const specifications: [string, string][] = [
   ["LEDs:", "12 multi-die packages; individual chip count not specified"],
@@ -134,8 +143,7 @@ export const productFour: Product = {
   ),
 
   availabilityMid: { kind: "none" },
-  // Reserved: scores are supplied separately, not carried over.
-  scores: EMPTY_SCORES,
+  scores,
 
   pros: [
     <>
