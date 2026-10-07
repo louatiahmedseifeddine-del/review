@@ -24,11 +24,11 @@ export const productFour: Product = {
   sponsoredLabel: null,
   tagline:
     "“Compact, cordless red and near-infrared light for targeted recovery sessions at home or away.”",
-  // Slot reserved for the Joovv Go assets. The previous product's rating,
-  // review count, and test result are deliberately not carried over.
+  // Supplied as a finished summary image — displayed as-is, not recreated.
   evaluation: {
-    kind: "pending",
-    label: "JOOVV GO 2.0 IMAGE + RATING GRAPHIC",
+    kind: "image",
+    src: "/joovv-go-evaluation.png",
+    alt: "Joovv Go 2.0. Test Result: B. Rating: 8.2/10. (1916 Reviews)",
   },
   availabilityTop: { kind: "text", text: <strong>Available On Amazon</strong> },
 
