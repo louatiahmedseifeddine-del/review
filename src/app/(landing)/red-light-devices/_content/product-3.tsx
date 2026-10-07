@@ -78,7 +78,7 @@ export const productThree: Product = {
         <strong>6.35 kg</strong>, Solo 3.0 is a substantial panel designed for
         a dedicated position in your home. Standard guidance recommends{" "}
         <strong>10-minute sessions at 16–24 inches</strong>, while the{" "}
-        <strong>adjustable timer ale light modes</strong> give users control
+        <strong>adjustable timer and selectable light modes</strong> give users control
         over their routine.
       </p>
       <p>
