@@ -1,99 +1,132 @@
 import type { Product } from "../../_components/product-section";
-import type { Scores } from "../../_components/score-bars";
+import { EMPTY_SCORES } from "../../_components/score-bars";
 
-const scores: Scores = {
-  Effectiveness: 8.7,
-  "Ease of Use": 9.4,
-  "Quality & Design": 9.3,
-  "Safety & Certifications": 9.6,
-  "Value for Money": 8.5,
-  "Customer Satisfaction": 9.2,
-};
-
-// Supplied inline, separated by vertical bars, with bold field labels.
 const specifications: [string, string][] = [
-  ["LEDs:", "3,840"],
-  ["Irradiance Power:", "140 mW/cm²"],
-  ["Adjustable brightness modes:", "Not specified"],
-  ["Wavelengths:", "660, 660, 810, 850, 940 nm"],
-  ["Dimensions:", "180 x 80 cm"],
-  ["Weight:", "Not specified"],
-  ["Safety Certified:", "FDA-registered"],
-  ["EMF Rating:", "Not specified"],
-  ["Free Warranty:", "Yes"],
+  ["Model:", "Single Solo 3.0 panel"],
+  ["LEDs:", "150 — 76 red + 74 near-infrared"],
+  ["Wavelengths:", "660 nm + 850 nm"],
+  ["Light modes:", "Red, near-infrared, or both"],
+  ["Light output:", "Up to 88 W"],
+  [
+    "Irradiance:",
+    "Above 100 mW/cm²; measurement distance not specified",
+  ],
+  ["Dimensions:", "91.44 × 22.23 × 5.94 cm"],
+  ["Weight:", "Approximately 6.35 kg"],
+  ["Timer:", "1–20 minutes"],
+  ["Standard session guidance:", "10 minutes at 16–24 inches"],
+  ["Power:", "Mains-powered"],
+  ["Included warranty:", "Two years limited"],
 ];
 
 export const productThree: Product = {
   number: 3,
   name: "Joovv Solo 3.0",
   sponsoredLabel: null,
-  tagline: "“A feature-rich mat with multi-wavelength versatility”",
-  // Supplied as a finished summary image — displayed as-is, not recreated.
+  tagline:
+    "“An expandable red and near-infrared light panel for a dedicated home recovery setup.”",
+  // Slot reserved for the Joovv assets. The previous product's rating,
+  // review count, and test result are deliberately not carried over.
   evaluation: {
-    kind: "image",
-    src: "/swirise-evaluation.png",
-    alt: "Swirise Red & Near-Infrared Light Therapy Mat Pro. Test Result: A-. Rating: 9.0/10. (3591 Reviews)",
+    kind: "pending",
+    label: "JOOVV SOLO 3.0 IMAGE + RATING GRAPHIC",
   },
-  availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
+  availabilityTop: { kind: "text", text: <strong>Available On Amazon</strong> },
 
   whyWeLoveIt: (
     <>
       <p>
+        The <strong>Joovv Solo 3.0</strong> stands out with its{" "}
+        <strong>modular panel design</strong>, offering a dedicated home setup
+        that can expand as your needs change. Unlike a wearable device focused
+        on one joint, its upright format exposes a larger region from a
+        distance, with compatible{" "}
+        <strong>stand, door, or wall-mounting options</strong> for hands-free
+        sessions.
+      </p>
+      <p>
+        The panel combines{" "}
+        <strong>660 nm red light and 850 nm near-infrared light</strong>{" "}
+        through <strong>150 LEDs</strong>, with the option to use{" "}
+        <strong>red, near-infrared, or both together</strong>. Joovv describes
+        its intended use as{" "}
         <strong>
-          The Swirise Red &amp; Near-Infrared Light Therapy Mat Pro
-        </strong>{" "}
-        stands out with its impressive{" "}
-        <strong>
-          6-wavelength system (630nm, 660nm, 810nm, 830nm, 880nm, and 1064nm)
-        </strong>{" "}
-        - more than most competitors offer.
+          topical heating for temporary relief of minor muscle and joint
+          discomfort and support for local circulation
+        </strong>
+        .
       </p>
       <p>
-        This <strong>FDA-registered mat</strong> delivers powerful{" "}
-        <strong>140mW/cm² irradiance</strong>, meaning you get{" "}
-        <strong>84J/cm² of therapeutic energy in just 10 minutes</strong>,
-        making sessions <strong>efficient for busy schedules</strong>.
+        Its published specifications list{" "}
+        <strong>up to 88 W of light output</strong> and{" "}
+        <strong>irradiance above 100 mW/cm²</strong>, although the measurement
+        distance is not specified in that specification block. These figures
+        describe its output, rather than establishing better recovery results
+        than the other devices reviewed.
       </p>
       <p>
-        The inclusion of <strong>1064nm wavelength</strong> is particularly
-        noteworthy, as it{" "}
-        <strong>penetrates deeper than standard red light therapy</strong> to{" "}
-        <strong>target inflammation at the root level</strong>. With{" "}
-        <strong>3,840 LEDs</strong> across the generous{" "}
-        <strong>180 x 80 cm surface</strong>, coverage is{" "}
-        <strong>comprehensive and even</strong>.
+        At <strong>91.44 × 22.23 × 5.94 cm</strong> and approximately{" "}
+        <strong>6.35 kg</strong>, Solo 3.0 is a substantial panel designed for
+        a dedicated position in your home. Standard guidance recommends{" "}
+        <strong>10-minute sessions at 16–24 inches</strong>, while the{" "}
+        <strong>adjustable timer ale light modes</strong> give users control
+        over their routine.
       </p>
       <p>
-        The <strong>shorter session times (10-20 minutes)</strong> work well for
-        those integrating therapy into <strong>morning routines</strong> or{" "}
-        <strong>post-workout recovery</strong>.
+        However,{" "}
+        <strong>the dedicated setup is also its main trade-off</strong>.
+        Appropriate mounting, positioning space, and its rigid construction
+        make it less convenient to move and store than a flexible mat. Its
+        expandability is appealing, but additional panels and mounting choices
+        can increase the overall investment.
       </p>
     </>
   ),
 
   whoItsFor: (
     <p>
-      <strong>Ideal for serious wellness enthusiasts</strong> who want{" "}
-      <strong>clinical-grade results</strong>,{" "}
-      <strong>athletes needing deep tissue recovery</strong>, and{" "}
-      <strong>anyone dealing with chronic inflammation or pain</strong> who
-      values <strong>science-backed therapy</strong>.
+      <strong>
+        Best suited for wellness enthusiasts who want a dedicated, expandable
+        light-panel system
+      </strong>{" "}
+      and have the space and budget for it. Less ideal for those seeking{" "}
+      <strong>
+        a flexible device they can use while resting, roll away after a
+        session, or purchase at a lower upfront cost
+      </strong>
+      .
     </p>
   ),
 
   priceCheck: (
-    <p>
-      <strong>As of our last check on January 29, 2026</strong>, the{" "}
-      <strong>
-        The Swirise Red &amp; Near-Infrared Light Therapy Mat Pro
-      </strong>{" "}
-      was priced at <strong>$949</strong>, placing it in the{" "}
-      <strong>mid-to-upper premium tier for price</strong>. While positioned in
-      the <strong>premium range</strong>, the{" "}
-      <strong>6-wavelength system</strong> and <strong>high irradiance</strong>{" "}
-      deliver <strong>exceptional value</strong> for those seeking{" "}
-      <strong>professional-grade results at home</strong>.
-    </p>
+    <>
+      <p>
+        <strong>As of our last check on October 7th, 2026</strong>, the{" "}
+        <strong>Joovv Solo 3.0</strong> was displayed at{" "}
+        <strong>$1,699</strong>, making it the{" "}
+        <strong>highest-priced device in this comparison</strong>. The selected
+        mounting configuration may affect the final package and price.
+      </p>
+      <p>
+        Its{" "}
+        <strong>
+          modular construction, selectable wavelengths, and expansion options
+        </strong>{" "}
+        offer value for buyers committed to a dedicated panel system. However,
+        the premium price is harder to justify if your priority is simply{" "}
+        <strong>
+          a straightforward recovery routine from the comfort of your bed or
+          sofa
+        </strong>
+        .
+      </p>
+      <p>
+        Joovv publishes a <strong>two-year limited warranty</strong> and{" "}
+        <strong>60-day return period</strong>, subject to authorization,
+        like-new condition, and original packaging requirements. Customers are
+        responsible for return shipping.
+      </p>
+    </>
   ),
 
   specifications: (
@@ -108,58 +141,78 @@ export const productThree: Product = {
   ),
 
   availabilityMid: { kind: "none" },
-  scores,
+  // Reserved: scores are supplied separately, not carried over.
+  scores: EMPTY_SCORES,
 
   pros: [
     <>
-      <strong>Comprehensive wavelength system:</strong> combines 660, 660, 810,
-      850, 940 nm wavelengths.
+      <strong>Expandable system:</strong> additional panels can increase the
+      size of your setup.
     </>,
     <>
-      <strong>High-powered irradiance:</strong> 140mW/cm² delivers faster, more
-      effective results.
+      <strong>Selectable wavelengths:</strong> use red light, near-infrared
+      light, or both together.
     </>,
     <>
-      <strong>Efficient sessions:</strong> achieve full therapeutic dose in just
-      10-20 minutes.
+      <strong>Hands-free positioning:</strong> compatible mounting options
+      support a dedicated session setup.
     </>,
     <>
-      <strong>Compact and portable:</strong> ideal for home or travel use, easy
-      to store and position.
+      <strong>Adjustable timer:</strong> built-in controls help manage session
+      duration.
     </>,
     <>
-      <strong>Plug-and-go operation:</strong> no setup required,
-      beginner-friendly.
+      <strong>Two-year limited warranty:</strong> longer included warranty
+      coverage than the other devices in this comparison.
     </>,
   ],
 
   cons: [
     <>
-      <strong>Higher learning curve:</strong> multiple wavelengths may feel
-      overwhelming for beginners
+      <strong>Premium price:</strong> the checked $1,699 price represents a
+      substantial upfront investment.
     </>,
     <>
-      <strong>No adjustable brightness modes:</strong> less flexibility compared
-      to other mats in this price range.
+      <strong>Requires positioning space:</strong> suitable mounting and
+      distance from the panel need to be considered.
     </>,
     <>
-      <strong>Higher price:</strong> more LEDs and wavelengths, but this is
-      reflected in it’s premium price-point.
+      <strong>Less portable:</strong> its rigid construction and approximately
+      6.35 kg weight make frequent moving and storage less convenient.
+    </>,
+    <>
+      <strong>Expansion adds cost:</strong> additional panels and mounting
+      configurations can increase the total investment.
     </>,
   ],
 
   conclusion: (
-    <p>
-      <strong>
-        The Swirise Red &amp; Near-Infrared Light Therapy Mat Pro
-      </strong>{" "}
-      is a <strong>scientifically advanced option</strong> that delivers{" "}
-      <strong>professional-grade therapy</strong> with{" "}
-      <strong>comprehensive wavelength coverage</strong>. Perfect for users who
-      want the <strong>most thorough red light treatment available</strong> and
-      don’t mind <strong>investing in superior technology</strong> for{" "}
-      <strong>faster, deeper results</strong>.
-    </p>
+    <>
+      <p>
+        The <strong>Joovv Solo 3.0</strong> is a compelling option for buyers
+        who want{" "}
+        <strong>
+          a dedicated, expandable red and near-infrared light system
+        </strong>
+        . Its selectable wavelengths, timer controls, and mounting options suit
+        users ready to make a panel setup part of their home.
+      </p>
+      <p>
+        For those seeking{" "}
+        <strong>
+          a simpler resting routine without the same cost or installation
+          requirements
+        </strong>
+        , the{" "}
+        <strong>ApolloThera Recovery Mat remains our top pick</strong>. Joovv’s
+        main appeal is its expandable panel format; ApolloThera brings together{" "}
+        <strong>
+          flexible positioning, a lower checked price, and its included
+          recovery bundle
+        </strong>
+        .
+      </p>
+    </>
   ),
 
   availabilityFinal: { kind: "none" },
