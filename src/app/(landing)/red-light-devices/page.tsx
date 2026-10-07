@@ -83,8 +83,8 @@ export default function Page() {
 
         <img
           className={styles.heroImage}
-          src="/hero-five-mats.png"
-          alt="The five mats side by side on a white background"
+          src="/hero-five-devices.png"
+          alt="The five devices side by side on a white background"
           width={2000}
           height={672}
         />
