@@ -1,9 +1,6 @@
 import type { Product } from "../_components/product-section";
 import type { Scores } from "../_components/score-bars";
 
-const MEGELIN_URL =
-  "https://megelin.com/products/megelin-red-and-infrared-light-therapy-mat";
-
 const scores: Scores = {
   Effectiveness: 8.8,
   "Ease of Use": 8.6,
@@ -115,8 +112,7 @@ export const productFive: Product = {
       approx. 4.5 kg | <strong>Safety Certified:</strong> FDA-Registered
       according to Megelin | <strong>EMF Rating:</strong> Not specified |{" "}
       <strong>Free Warranty:</strong> 1 Year |{" "}
-      <strong>Estimated LED Lifespan:</strong> 80,000 hours{" "}
-      <a href={MEGELIN_URL}>Megelin</a>
+      <strong>Estimated LED Lifespan:</strong> 80,000 hours
     </>
   ),
 
@@ -146,8 +142,7 @@ export const productFive: Product = {
     </>,
     <>
       <strong>FDA-Registered:</strong> Megelin identifies the device as
-      FDA-registered on its product page.{" "}
-      <a href={MEGELIN_URL}>Megelin</a>
+      FDA-registered on its product page.
     </>,
   ],
 
