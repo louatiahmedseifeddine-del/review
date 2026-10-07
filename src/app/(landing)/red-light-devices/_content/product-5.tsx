@@ -1,185 +1,220 @@
 import type { Product } from "../../_components/product-section";
-import type { Scores } from "../../_components/score-bars";
+import { EMPTY_SCORES } from "../../_components/score-bars";
 
-const scores: Scores = {
-  Effectiveness: 8.8,
-  "Ease of Use": 8.6,
-  "Quality & Design": 8.7,
-  "Safety & Certifications": 8.5,
-  "Value for Money": 8.3,
-  "Customer Satisfaction": 8.8,
-};
+const specifications: [string, string][] = [
+  [
+    "Technologies:",
+    "Near-infrared LEDs, heat with far-infrared energy, and vibration",
+  ],
+  ["Coverage:", "Lower back"],
+  ["LED count:", "Not specified"],
+  ["Near-infrared wavelength:", "Not specified"],
+  ["Irradiance:", "Not specified"],
+  ["Heat settings:", "39°C, 42°C, 45°C"],
+  ["Vibration patterns:", "Low, High, Wave"],
+  [
+    "Session duration:",
+    "10 minutes for near-infrared; 20 minutes for heat and vibration",
+  ],
+  ["Power:", "Rechargeable"],
+  ["Battery life:", "Up to 180 minutes advertised"],
+  ["Dimensions:", "Not specified"],
+  ["Weight:", "Not specified"],
+  [
+    "Included accessories:",
+    "Travel pouch and USB-C cable; power adapter excluded",
+  ],
+  ["Included warranty:", "One year limited"],
+];
 
 export const productFive: Product = {
   number: 5,
   name: "Therabody ThermBack LED",
   sponsoredLabel: null,
   tagline:
-    "“High-coverage full-body red and near-infrared therapy with an exceptionally high LED count.”",
+    "“Near-infrared light, heat, and vibration in a wearable wrap for lower-back comfort.”",
   // Supplied as a finished summary image — displayed as-is, not recreated.
   evaluation: {
     kind: "image",
-    src: "/megelin-evaluation.png",
-    alt: "Megelin Red and Infrared Light Therapy Mat. Test Result: B. Rating: 8.2/10. (2971 Reviews)",
+    src: "/therabody-evaluation.png",
+    alt: "Therabody ThermBack LED. Test Result: B. Rating: 8.2/10. (1023 Reviews)",
   },
-  availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
+  availabilityTop: { kind: "text", text: <strong>Available On Amazon</strong> },
 
   whyWeLoveIt: (
     <>
       <p>
-        This <strong> Red and Infrared Light Therapy Mat</strong> takes a much
-        more <strong>full-body approach</strong> than smaller targeted
-        red-light devices. The mat combines <strong>3,840 LEDs</strong> across
-        two widely used wavelengths —{" "}
-        <strong>660nm red light and 850nm near-infrared light</strong> — while
-        delivering a stated irradiance of{" "}
-        <strong>120 mW/cm² at 0 inches</strong>.
+        The <strong>Therabody ThermBack LED</strong> takes a{" "}
+        <strong>combined approach to lower-back comfort</strong>, bringing
+        together <strong>near-infrared light, heat, and vibration</strong> in an
+        adjustable wearable wrap. For users who want{" "}
+        <strong>warmth and a massage sensation alongside light exposure</strong>
+        , it offers several functions in one cordless device.
       </p>
       <p>
-        Its large <strong>71 × 32-inch surface</strong> is designed to provide
-        broad, uniform coverage while lying down, making it better suited to
-        users who want to treat{" "}
-        <strong>multiple areas during the same session</strong> rather than
-        repositioning a small panel or wrap repeatedly. they also lists an
-        estimated LED lifespan of <strong>80,000 hours</strong> and includes a{" "}
-        <strong>1-year warranty</strong>.
+        Its design combines{" "}
+        <strong>near-infrared LEDs positioned along the spine</strong>,{" "}
+        <strong>carbon-fiber heating with far-infrared energy</strong>, and{" "}
+        <strong>vibration across the lower-back muscles</strong>. These
+        technologies provide different inputs: light exposure, warmth, and
+        mechanical stimulation, with the device intended to support{" "}
+        <strong>temporary comfort and local circulation</strong>.
       </p>
       <p>
-        At approximately <strong>10 lb</strong>, however, this is considerably
-        larger and heavier than compact red-light pads. Its strength is
-        therefore less about portability and more about delivering a{" "}
+        Users can choose from{" "}
         <strong>
-          high LED count and broad treatment surface in one device
+          three heat settings—39°C, 42°C, and 45°C—and three vibration
+          patterns: Low, High, and Wave
         </strong>
-        .
+        . The manual specifies{" "}
+        <strong>10-minute near-infrared sessions</strong> and{" "}
+        <strong>20-minute heat and vibration sessions</strong>, allowing users
+        to select the functions that suit their routine.
+      </p>
+      <p>
+        The <strong>rechargeable design</strong>, advertised{" "}
+        <strong>battery life of up to 180 minutes</strong>, and adjustable fit
+        support use while seated or upright. Device controls and app
+        customization offer flexibility, while an included{" "}
+        <strong>travel pouch and USB-C charging cable</strong> make storage and
+        transport straightforward.
+      </p>
+      <p>
+        However,{" "}
+        <strong>its focus on the lower back also limits its coverage</strong>.
+        It does not expose the neck, shoulders, back, and hips together, and
+        the exact{" "}
+        <strong>near-infrared wavelength, LED count, and irradiance</strong>{" "}
+        were not specified in the reviewed material—making direct light-output
+        comparisons difficult.
       </p>
     </>
   ),
 
   whoItsFor: (
-    <>
-      <p>
-        <strong>
-          Best suited for users who want large-area or full-body red and
-          near-infrared light coverage at home
-        </strong>{" "}
-        without investing in a rigid therapy bed or repeatedly repositioning a
-        smaller panel.
-      </p>
-      <p>
-        It may be particularly attractive to users prioritising{" "}
-        <strong>
-          coverage, LED density, and relatively strong stated irradiance
-        </strong>{" "}
-        over portability.
-      </p>
-    </>
+    <p>
+      <strong>
+        Best suited for users whose main priority is lower-back comfort
+      </strong>{" "}
+      and who want{" "}
+      <strong>
+        heat, vibration, and near-infrared light in a wearable device
+      </strong>
+      . Less ideal for those seeking{" "}
+      <strong>broader light exposure across several body areas</strong> or a
+      device focused specifically on red and near-infrared light therapy.
+    </p>
   ),
 
   priceCheck: (
     <>
       <p>
-        As of our latest check on <strong>October 1st, 2026</strong>, this
-        <strong>
-          {" "}
-          Red and Infrared Light Therapy Mat is listed at $739
-        </strong>
-        , reduced from a displayed reference price of{" "}
-        <strong>$1,849</strong>. The product page currently shows{" "}
-        <strong>
-          54 customer reviews with an average rating of 4.72/5
-        </strong>
-        .
+        <strong>As of our last check on October 7th, 2026</strong>, the{" "}
+        <strong>Therabody ThermBack LED</strong> was displayed at{" "}
+        <strong>$263.99, reduced from $329.99</strong>.
       </p>
       <p>
-        That places it well above entry-level red-light mats in price, although
-        its{" "}
+        Its{" "}
         <strong>
-          3,840 LEDs, 120 mW/cm² output, and full-body dimensions
+          combined technologies, adjustable settings, and cordless format
         </strong>{" "}
-        provide considerably more hardware.
+        offer value for buyers who specifically want lower-back warmth and
+        vibration alongside near-infraver, the higher checked price than
+        ApolloThera buys a different set of functions, rather than broader
+        light coverage.
+      </p>
+      <p>
+        Therabody publishes a <strong>one-year limited warranty</strong> and{" "}
+        <strong>30-day return period</strong>, with standard return shipping
+        covered for eligible direct purchases. Authorization, like-new
+        condition, original packaging, and included accessories are required.
       </p>
     </>
   ),
 
   specifications: (
     <>
-      <strong>LEDs:</strong> 3,840 total — 1,280 × 660nm + 2,560 × 850nm |{" "}
-      <strong>Irradiance Power:</strong> 120 mW/cm² @ 0&quot; |{" "}
-      <strong>Adjustable Brightness Modes:</strong> Not specified |{" "}
-      <strong>Wavelengths:</strong> 660nm + 850nm | <strong>Dimensions:</strong>{" "}
-      71 × 32 in / approx. 180 × 81 cm | <strong>Weight:</strong> 10 lb /
-      approx. 4.5 kg | <strong>Safety Certified:</strong> FDA-Registered
-      according to Megelin | <strong>EMF Rating:</strong> Not specified |{" "}
-      <strong>Free Warranty:</strong> 1 Year |{" "}
-      <strong>Estimated LED Lifespan:</strong> 80,000 hours
+      {specifications.map(([label, value], index) => (
+        <span key={label}>
+          {index > 0 ? " | " : null}
+          <strong>{label}</strong> {value}
+        </span>
+      ))}
     </>
   ),
 
   availabilityMid: { kind: "none" },
-  scores,
+  // Reserved: scores are supplied separately, not carried over.
+  scores: EMPTY_SCORES,
 
   pros: [
     <>
-      <strong>Very high LED count:</strong> 3,840 LEDs provide significantly
-      more light sources than many standard therapy mats.
+      <strong>Combined recovery functions:</strong> brings together
+      near-infrared light, heat, and vibration.
     </>,
     <>
-      <strong>Full-body coverage:</strong> Large 71 × 32-inch surface can cover
-      most of the body during a single lying-down session.
+      <strong>Wearable lower-back design:</strong> adjustable wrap supports
+      focused use without holding the device.
     </>,
     <>
-      <strong>Strong stated irradiance:</strong> Rated at 120 mW/cm² at direct
-      contact.
+      <strong>Customizable comfort:</strong> three heat settings and three
+      vibration patterns.
     </>,
     <>
-      <strong>Dual wavelengths:</strong> Combines 660nm red light with
-      deeper-reaching 850nm near-infrared light.
+      <strong>Cordless convenience:</strong> rechargeable operation supports
+      seated or upright use.
     </>,
     <>
-      <strong>Long LED lifespan:</strong> Megelin specifies an estimated
-      lifespan of approximately 80,000 hours.
-    </>,
-    <>
-      <strong>FDA-Registered:</strong> Megelin identifies the device as
-      FDA-registered on its product page.
+      <strong>Travel pouch included:</strong> convenient for storage and
+      transport.
     </>,
   ],
 
   cons: [
     <>
-      <strong>Premium price:</strong> At $739, it costs considerably more than
-      smaller red-light pads and entry-level mats.
+      <strong>Limited body coverage:</strong> designed for the lower back
+      rather than neck-to-hip light exposure.
     </>,
     <>
-      <strong>Less portable:</strong> At approximately 10 lb and 71 inches
-      long, it is not especially convenient for frequent travel.
+      <strong>Incomplete light specifications:</strong> exact wavelength, LED
+      count, and irradiance were not specified in the reviewed material.
     </>,
     <>
-      <strong>Only two wavelengths:</strong> Uses the standard 660nm + 850nm
-      combination rather than the broader multi-wavelength systems found on
-      some premium competitors.
+      <strong>Power adapter not included:</strong> a suitable adapter may
+      require a separate purchase.
     </>,
     <>
-      <strong>Limited published control specifications:</strong> Megelin does
-      not clearly specify brightness levels or pulse-frequency modes in the
-      technical specifications shown on the product page.
-    </>,
-    <>
-      <strong>Only a 1-year warranty:</strong> Relatively short compared with
-      competitors offering multi-year warranties.
+      <strong>Higher checked price than ApolloThera:</strong> best justified
+      when heat and vibration are important purchasing priorities.
     </>,
   ],
 
   conclusion: (
-    <p>
-      The <strong> Megelin Red Light Therapy Mat</strong> is a smart, expensive
-      choice for users who want{" "}
-      <strong>targeted neck and shoulder relief</strong> in a{" "}
-      <strong>portable, easy-to-use format</strong>. Its ergonomic cervical
-      support, pulse modes, and lightweight design make it easy for daily
-      stress relief and desk-related tension.
-    </p>
+    <>
+      <p>
+        The <strong>Therabody ThermBack LED</strong> stands out for its{" "}
+        <strong>
+          combination of near-infrared light, adjustable heat, and vibration
+        </strong>
+        . It’s a practical option for buyers who want{" "}
+        <strong>
+          focused lower-back comfort in a cordless, wearable format
+        </strong>
+        .
+      </p>
+      <p>
+        For those seeking{" "}
+        <strong>broader neck-to-hip light coverage while resting</strong>, the{" "}
+        <strong>ApolloThera Recovery Mat remains our top pick</strong>,
+        combining a flexible design, a lower checked price, and its included
+        recovery bundle. ThermBack is the more specialized alternative for
+        users who prioritize{" "}
+        <strong>
+          lower-back warmth and vibration alongside light exposure
+        </strong>
+        .
+      </p>
+    </>
   ),
 
   availabilityFinal: { kind: "none" },
