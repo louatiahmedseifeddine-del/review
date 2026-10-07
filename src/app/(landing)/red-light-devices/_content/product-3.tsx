@@ -1,5 +1,14 @@
 import type { Product } from "../../_components/product-section";
-import { EMPTY_SCORES } from "../../_components/score-bars";
+import type { Scores } from "../../_components/score-bars";
+
+const scores: Scores = {
+  Effectiveness: 8.7,
+  "Ease of Use": 9.4,
+  "Quality & Design": 9.3,
+  "Safety & Certifications": 9.6,
+  "Value for Money": 8.5,
+  "Customer Satisfaction": 9.2,
+};
 
 const specifications: [string, string][] = [
   ["Model:", "Single Solo 3.0 panel"],
@@ -141,8 +150,7 @@ export const productThree: Product = {
   ),
 
   availabilityMid: { kind: "none" },
-  // Reserved: scores are supplied separately, not carried over.
-  scores: EMPTY_SCORES,
+  scores,
 
   pros: [
     <>
