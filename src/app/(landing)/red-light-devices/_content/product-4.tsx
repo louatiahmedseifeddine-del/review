@@ -1,102 +1,125 @@
 import type { Product } from "../../_components/product-section";
-import type { Scores } from "../../_components/score-bars";
-
-const scores: Scores = {
-  Effectiveness: 9.0,
-  "Ease of Use": 9.3,
-  "Quality & Design": 9.1,
-  "Safety & Certifications": 9.4,
-  "Value for Money": 8.9,
-  "Customer Satisfaction": 9.2,
-};
+import { EMPTY_SCORES } from "../../_components/score-bars";
 
 const specifications: [string, string][] = [
-  ["LEDs:", "1,290"],
-  ["Irradiance Power:", "120 mW/cm²"],
-  ["Adjustable brightness modes:", "Not specified"],
-  ["Wavelengths:", "630, 660, 810, 830 1064 nm"],
-  ["Dimensions:", "160 x 60 cm"],
-  ["Weight:", "9 kg"],
-  ["Safety Certified:", "RoHS, FCC & CE approved"],
-  ["EMF Rating:", "Not specified"],
-  ["Free Warranty:", "Yes"],
+  ["LEDs:", "12 multi-die packages; individual chip count not specified"],
+  ["Wavelengths:", "660 nm + 850 nm"],
+  ["Light output:", "Up to 5 W"],
+  [
+    "Irradiance:",
+    "Above 100 mW/cm²; measurement distance not specified",
+  ],
+  ["Dimensions:", "14.61 × 9.53 × 3.73 cm"],
+  ["Weight:", "Approximately 0.6 kg"],
+  ["Standard session guidance:", "10 minutes at 6–12 inches"],
+  ["Cooldown:", "10 minutes after a 10-minute session"],
+  ["Power:", "Rechargeable battery or adapter"],
+  ["Battery runtime:", "Up to two hours, depending on mode"],
+  ["Included warranty:", "One year limited"],
 ];
 
 export const productFour: Product = {
   number: 4,
   name: "Joovv Go 2.0",
   sponsoredLabel: null,
-  tagline: "“A premium wellness mat with advanced multi-spectrum technology”",
-  // Supplied as a finished summary image — displayed as-is, not recreated.
+  tagline:
+    "“Compact, cordless red and near-infrared light for targeted recovery sessions at home or away.”",
+  // Slot reserved for the Joovv Go assets. The previous product's rating,
+  // review count, and test result are deliberately not carried over.
   evaluation: {
-    kind: "image",
-    src: "/redjuvi-evaluation.png",
-    alt: "Redjuvi - Full Body Infrared Light Therapy Mat. Test Result: B. Rating: 8.2/10. (2971 Reviews)",
+    kind: "pending",
+    label: "JOOVV GO 2.0 IMAGE + RATING GRAPHIC",
   },
-  availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
+  availabilityTop: { kind: "text", text: <strong>Available On Amazon</strong> },
 
   whyWeLoveIt: (
     <>
       <p>
-        <strong>Redjuvi - Full Body Infrared Light Therapy Mat</strong> stands
-        out with its <strong>comprehensive feature set</strong>, combining{" "}
-        <strong>
-          6 different wavelengths (630nm, 660nm, 810nm, 830nm, 880nm, 1064nm)
-        </strong>{" "}
-        with additional wellness technologies like <strong>ION therapy</strong>,{" "}
-        <strong>EMS</strong>, <strong>vibration massage</strong>, and{" "}
-        <strong>ultrasound wave functions</strong>.
+        The <strong>Joovv Go 2.0</strong> takes a{" "}
+        <strong>compact, portable approach to recovery</strong>, bringing red
+        and near-infrared light into a rechargeable handheld device. For users
+        who want to focus on{" "}
+        <strong>a small area at home or while travelling</strong>, its cordless
+        design and included travel case make it convenient to carry and store.
       </p>
       <p>
-        With <strong>1,280 LEDs</strong> and{" "}
-        <strong>120mW/cm² irradiance</strong>, it delivers{" "}
-        <strong>solid light therapy performance</strong> across a{" "}
-        <strong>160 x 60 cm surface</strong>. The{" "}
-        <strong>adjustable timer settings (5-30 minutes)</strong> and{" "}
-        <strong>variety of treatment modes</strong> make it{" "}
-        <strong>highly customisable</strong> for different wellness goals.
+        It combines{" "}
+        <strong>660 nm red light and 850 nm near-infrared light</strong>, the
+        same wavelength pair used in Joovv’s larger Solo panel. The difference
+        is the format: Go directs light toward{" "}
+        <strong>one selected area at a time</strong>, making portability its
+        main advantage over a larger home setup.
       </p>
       <p>
-        However, the <strong>complexity</strong> could also mean{" "}
-        <strong>more potential points of failure</strong>. It is also worth
-        noting that the mat is shorter in both length and width to the other
-        red light mats that we’ve reviewed,{" "}
+        Its published specifications list{" "}
+        <strong>12 multi-die LED packages</strong>,{" "}
+        <strong>up to 5 W of light output</strong>, and{" "}
+        <strong>irradiance above 100 mW/cm²</strong>, although the measurement
+        distance is not specified in that specification block. At
+        approximately <strong>14.61 × 9.53 × 3.73 cm</strong> and{" "}
+        <strong>0.6 kg</strong>, it offers a compact alternative to a rigid
+        panel.
+      </p>
+      <p>
+        The <strong>silicone grip and quiet, fanless design</strong> support
+        handheld use, with standard guidance recommending{" "}
+        <strong>10-minute sessions at 6–12 inches</strong>. The Joovv app
+        allows mode changes and session customization, while an{" "}
+        <strong>optional charging dock</strong> can support hands-ing for
+        suitable areas.
+      </p>
+      <p>
+        However,{" "}
         <strong>
-          meaning it may be less suitable for larger users looking for
-          full-body coverage
+          small-area coverage and cooldown time are important trade-offs
         </strong>
-        .
+        . A{" "}
+        <strong>10-minute cooldown follows each 10-minute session</strong>, so
+        moving between shoulders, back, and hips can make a broader routine
+        more time-consuming than using a mat across adjacent areas at once.
       </p>
     </>
   ),
 
   whoItsFor: (
     <p>
-      <strong>Best suited for wellness enthusiasts</strong> who want an{" "}
-      <strong>all-in-one recovery system</strong> and don’t mind{" "}
-      <strong>paying premium prices</strong> for{" "}
-      <strong>maximum features</strong>. Less ideal for{" "}
-      <strong>beginners</strong> or those focused purely on{" "}
       <strong>
-        basic red light therapy, and those who are larger in size, as this mat
-        is comparatively smaller than others on the market.
-      </strong>
+        Best suited for users who value portability, compact storage, and
+        targeted sessions
+      </strong>{" "}
+      and are comfortable holding or positioning a device near the intended
+      area. Less ideal for those seeking{" "}
+      <strong>broader coverage in one resting session</strong> or a routine
+      that does not require repeated positioning.
     </p>
   ),
 
   priceCheck: (
-    <p>
-      As of our last check on <strong>January 29, 2026</strong>, the{" "}
-      <strong>
-        Redjuvi - Full Body Infrared Light Therapy Mat retailed for $1,255 (down
-        from $1,540)
-      </strong>
-      , placing it in the{" "}
-      <strong>high-range category for price</strong> among comparable red light
-      mat. It offers solid technology and features but at a comparably high
-      cost, the <strong>cost may be prohibitive</strong> for many users seeking{" "}
-      <strong>basic red light therapy benefits</strong>.
-    </p>
+    <>
+      <p>
+        <strong>As of our last check on October 7th, 2026</strong>, the{" "}
+        <strong>Joovv Go 2.0</strong> was displayed at <strong>$549</strong>.
+        The optional charging dock is a separate accessory and may increase the
+        total purchase price.
+      </p>
+      <p>
+        Its{" "}
+        <strong>
+          rechargeable operation, compact construction, and travel accessories
+        </strong>{" "}
+        offer value for buyers who prioritize portability. However, its higher
+        price than ApolloThera and smaller treatment format make it a more
+        specialized choice for{" "}
+        <strong>localized use rather than broader at-home coverage</strong>.
+      </p>
+      <p>
+        Joovv publishes a <strong>one-year limited warranty</strong> and{" "}
+        <strong>30-day return period</strong>. Opened or used returns incur a{" "}
+        <strong>$50 restocking fee</strong>, with authorization, original
+        packaging, condition requirements, and customer-paid return shipping
+        also applying.
+      </p>
+    </>
   ),
 
   specifications: (
@@ -111,63 +134,76 @@ export const productFour: Product = {
   ),
 
   availabilityMid: { kind: "none" },
-  scores,
+  // Reserved: scores are supplied separately, not carried over.
+  scores: EMPTY_SCORES,
 
   pros: [
     <>
-      <strong>Comprehensive wavelength spectrum:</strong> 6 different
-      therapeutic wavelengths for targeted benefits (630, 660, 810, 830, 850,
-      1064 nm).
+      <strong>Compact and portable:</strong> convenient for targeted use at
+      home or while travelling.
     </>,
     <>
-      <strong>Multi-modal therapy:</strong> includes EMS, vibration, ION
-      therapy, and ultrasound features.
+      <strong>Cordless operation:</strong> rechargeable battery supports
+      sessions without a wall connection.
     </>,
     <>
-      <strong>Premium construction:</strong> high-quality materials and robust
-      LED array.
+      <strong>Dual wavelengths:</strong> combines 660 nm red and 850 nm
+      near-infrared light.
     </>,
     <>
-      <strong>Safety Certified:</strong> RoHS, FCC &amp; CE approved.
+      <strong>Quiet design:</strong> fanless operation suits a relaxed home
+      routine.
+    </>,
+    <>
+      <strong>Travel accessories included:</strong> supplied with a travel
+      case, power adapter, and protective eyewear.
     </>,
   ],
 
   cons: [
     <>
-      <strong>Premium price point:</strong> $1,255 (down from $1,540) may limit
-      accessibility for those with a budget.
+      <strong>Small-area coverage:</strong> separate body regions require
+      additional positioning and sessions.
     </>,
     <>
-      <strong>Feature complexity:</strong> numerous options may overwhelm users
-      wanting simple therapy.
+      <strong>Cooldown between sessions:</strong> a 10-minute pause after each
+      10-minute session adds time to multi-area use.
     </>,
     <>
-      <strong>Heavier unit:</strong> 9 kg may make portability and storage more
-      challenging.
+      <strong>App-dependent customization:</strong> changing modes and
+      customizing sessions requires the Joovv app.
     </>,
     <>
-      <strong>Potential over-engineering:</strong> many features may go unused
-      by average users.
+      <strong>Higher price for a compact device:</strong> a $549 list price is
+      expensive for a device that treats one area at a time.
     </>,
     <>
-      <strong>Lesser coverage:</strong> 160 x 60 cm compared to other mats
-      offering 180-200 x 80-105 cm.
+      <strong>Opened-return fee:</strong> used or opened returns incur a $50
+      restocking charge under the published policy.
     </>,
   ],
 
   conclusion: (
-    <p>
-      The <strong>Redjuvi – Full Body Infrared Light Therapy Mat</strong> is a{" "}
-      <strong>premium, all-in-one option</strong> combining a{" "}
-      <strong>broad 6-wavelength spectrum</strong> with{" "}
-      <strong>advanced wellness features</strong> like{" "}
-      <strong>EMS, vibration, and ION therapy</strong>. It’s best suited for{" "}
-      <strong>experienced users</strong> who want{" "}
-      <strong>maximum versatility</strong> and don’t mind{" "}
-      <strong>added complexity</strong>, while those seeking{" "}
-      <strong>simple, straightforward red light therapy</strong> may prefer{" "}
-      <strong>more focused alternatives</strong>.
-    </p>
+    <>
+      <p>
+        The <strong>Joovv Go 2.0</strong> stands out for its{" "}
+        <strong>compact size, rechargeable operation, and quiet design</strong>
+        . It’s a practical option for buyers who want{" "}
+        <strong>
+          portable red and near-infrared light for a selected area
+        </strong>
+        , particularly when travelling or working with limited storage space.
+      </p>
+      <p>
+        For those seeking{" "}
+        <strong>broader neck-to-hip coverage while resting</strong>, the{" "}
+        <strong>ApolloThera Recovery Mat remains our top pick</strong>. Its
+        flexible format avoids the same handheld positioning and
+        between-session cooldown requirements, while its lower checked price
+        and included recovery bundle offer a more accessible package for home
+        use.
+      </p>
+    </>
   ),
 
   availabilityFinal: { kind: "none" },
