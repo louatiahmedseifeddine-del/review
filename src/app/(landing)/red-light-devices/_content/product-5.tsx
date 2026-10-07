@@ -128,9 +128,9 @@ export const productFive: Product = {
           combined technologies, adjustable settings, and cordless format
         </strong>{" "}
         offer value for buyers who specifically want lower-back warmth and
-        vibration alongside near-infraver, the higher checked price than
-        ApolloThera buys a different set of functions, rather than broader
-        light coverage.
+        vibration alongside near-infrared light. However, the higher checked
+        price than ApolloThera buys a different set of functions, rather than
+        broader light coverage.
       </p>
       <p>
         Therabody publishes a <strong>one-year limited warranty</strong> and{" "}

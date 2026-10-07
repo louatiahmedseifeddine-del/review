@@ -117,7 +117,7 @@ export const buyingGuide: { label: string; body: React.ReactNode }[] = [
           affect everyday convenience.
         </p>
         <p>
-          For aine you can follow comfortably, look for a design that is{" "}
+          For a routine you can follow comfortably, look for a design that is{" "}
           <strong>
             easy to position, manageable to move, and simple to put away
           </strong>

@@ -154,7 +154,7 @@ export const faqEntries: FaqEntry[] = [
           not automatically be used on the face.
         </p>
         <p>
-          If facial use is permitted, follow the specified distance, sime, and
+          If facial use is permitted, follow the specified distance, session time, and
           eye-protection instructions. Do not substitute ordinary sunglasses
           for the protective eyewear recommended by the manufacturer.
         </p>
