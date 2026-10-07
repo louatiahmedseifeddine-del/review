@@ -164,9 +164,8 @@ export const productTwo: Product = {
       require repositioning.
     </>,
     <>
-      <strong>Higher upfront cost:</strong> the checked $399 price is double
-      ApolloThera’s $199.99, and the $699 list price is more than three times
-      it.
+      <strong>Higher upfront cost:</strong> a $699 list price is expensive for
+      a device that treats one area at a time.
     </>,
     <>
       <strong>Fit may require an extra accessory:</strong> the extender strap is
