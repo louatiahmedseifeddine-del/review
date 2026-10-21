@@ -3,37 +3,44 @@ import type { Product } from "../_components/product-section";
 import type { Scores } from "../_components/score-bars";
 
 const scores: Scores = {
-  Effectiveness: 9.0,
-  "Ease of Use": 9.3,
-  "Quality & Design": 9.1,
-  "Safety & Certifications": 9.4,
-  "Value for Money": 8.9,
-  "Customer Satisfaction": 9.2,
+  Effectiveness: 8.8,
+  "Ease of Use": 8.6,
+  "Quality & Design": 8.7,
+  "Safety & Certifications": 8.5,
+  "Value for Money": 8.3,
+  "Customer Satisfaction": 8.8,
 };
 
 const rows: [string, React.ReactNode][] = [
-  ["Coverage", "160 × 60 cm — the smallest full-size mat here"],
-  ["Wavelengths", "630, 660, 810, 830, 1064 nm"],
-  ["LEDs", "1,290"],
-  ["Irradiance", "120 mW/cm²"],
-  ["Session", "Adjustable timer, 5–30 minutes"],
-  ["Extras", "ION therapy, EMS, vibration massage, ultrasound"],
-  ["Weight", "9 kg"],
-  ["Safety certified", "RoHS, FCC & CE approved"],
+  ["Coverage", "71 × 32 in — approx. 180 × 81 cm"],
+  ["Wavelengths", "660nm + 850nm"],
+  [
+    "LEDs",
+    <>
+      <span className={styles.analysisHighlight}>3,840</span> — 1,280 × 660nm
+      + 2,560 × 850nm
+    </>,
+  ],
+  ["Irradiance", "120 mW/cm² @ 0″"],
+  ["Brightness modes", "Not specified"],
+  ["LED lifespan", "Estimated 80,000 hours"],
+  ["Weight", "10 lb — approx. 4.5 kg"],
+  ["Safety certified", "FDA-registered, according to Megelin"],
   ["EMF rating", "Not specified"],
-  ["Warranty", "Yes"],
+  ["Warranty", "1 year"],
 ];
 
 export const productFive: Product = {
   number: 5,
-  name: "Redjuvi - Full Body Infrared Light Therapy Mat",
+  name: "Megelin Red and Infrared Light Therapy Mat",
   sponsoredLabel: null,
-  tagline: "“A premium wellness mat with advanced multi-spectrum technology”",
+  tagline:
+    "“High-coverage full-body red and near-infrared therapy with an exceptionally high LED count.”",
   // Supplied as a finished summary image — displayed as-is, not recreated.
   evaluation: {
     kind: "image",
-    src: "/redjuvi-evaluation.png",
-    alt: "Redjuvi - Full Body Infrared Light Therapy Mat. Test Result: B. Rating: 8.2/10. (2971 Reviews)",
+    src: "/megelin-evaluation.png",
+    alt: "Megelin Red and Infrared Light Therapy Mat. Test Result: B. Rating: 8.2/10. (2971 Reviews)",
   },
   availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
 
@@ -52,18 +59,17 @@ export const productFive: Product = {
           <tr className={styles.analysisPriceRow}>
             <th scope="row">Price</th>
             <td>
-              <span className={styles.analysisHighlight}>$1,255</span> — down
-              from $1,540
+              <span className={styles.analysisHighlight}>$739</span> — reduced
+              from a displayed reference price of $1,849
             </td>
           </tr>
         </tbody>
       </table>
 
       <p className={styles.verdict}>
-        <strong>Best for</strong> people who want ION, EMS, vibration and
-        ultrasound bundled into one device. It is the{" "}
-        <strong>most expensive mat on this list</strong> and the smallest of
-        the full-size options, so larger users should size up elsewhere.
+        <strong>Best for</strong> maximum LED count and full-body coverage
+        at a mid-range price. At <strong>10 lb it is the heaviest here</strong>,
+        and its listing shows only 54 customer reviews.
       </p>
     </>
   ),
@@ -78,58 +84,60 @@ export const productFive: Product = {
 
   pros: [
     <>
-      <strong>Comprehensive wavelength spectrum:</strong> 6 different
-      therapeutic wavelengths for targeted benefits (630, 660, 810, 830, 850,
-      1064 nm).
+      <strong>Very high LED count:</strong> 3,840 LEDs provide significantly
+      more light sources than many standard therapy mats.
     </>,
     <>
-      <strong>Multi-modal therapy:</strong> includes EMS, vibration, ION
-      therapy, and ultrasound features.
+      <strong>Full-body coverage:</strong> Large 71 × 32-inch surface can cover
+      most of the body during a single lying-down session.
     </>,
     <>
-      <strong>Premium construction:</strong> high-quality materials and robust
-      LED array.
+      <strong>Strong stated irradiance:</strong> Rated at 120 mW/cm² at direct
+      contact.
     </>,
     <>
-      <strong>Safety Certified:</strong> RoHS, FCC &amp; CE approved.
+      <strong>Dual wavelengths:</strong> Combines 660nm red light with
+      deeper-reaching 850nm near-infrared light.
+    </>,
+    <>
+      <strong>Long LED lifespan:</strong> Megelin specifies an estimated
+      lifespan of approximately 80,000 hours.
+    </>,
+    <>
+      <strong>FDA-Registered:</strong> Megelin identifies the device as
+      FDA-registered on its product page.
     </>,
   ],
 
   cons: [
     <>
-      <strong>Premium price point:</strong> $1,255 (down from $1,540) may limit
-      accessibility for those with a budget.
+      <strong>Premium price:</strong> At $739, it costs considerably more than
+      smaller red-light pads and entry-level mats.
     </>,
     <>
-      <strong>Feature complexity:</strong> numerous options may overwhelm users
-      wanting simple therapy.
+      <strong>Less portable:</strong> At approximately 10 lb and 71 inches
+      long, it is not especially convenient for frequent travel.
     </>,
     <>
-      <strong>Heavier unit:</strong> 9 kg may make portability and storage more
-      challenging.
+      <strong>Only two wavelengths:</strong> Uses the standard 660nm + 850nm
+      combination rather than the broader multi-wavelength systems found on
+      some premium competitors.
     </>,
     <>
-      <strong>Potential over-engineering:</strong> many features may go unused
-      by average users.
-    </>,
-    <>
-      <strong>Lesser coverage:</strong> 160 x 60 cm compared to other mats
-      offering 180-200 x 80-105 cm.
+      <strong>Limited published control specifications:</strong> Megelin does
+      not clearly specify brightness levels or pulse-frequency modes in the
+      technical specifications shown on the product page.
     </>,
   ],
 
   conclusion: (
     <p>
-      The <strong>Redjuvi – Full Body Infrared Light Therapy Mat</strong> is a{" "}
-      <strong>premium, all-in-one option</strong> combining a{" "}
-      <strong>broad 6-wavelength spectrum</strong> with{" "}
-      <strong>advanced wellness features</strong> like{" "}
-      <strong>EMS, vibration, and ION therapy</strong>. It’s best suited for{" "}
-      <strong>experienced users</strong> who want{" "}
-      <strong>maximum versatility</strong> and don’t mind{" "}
-      <strong>added complexity</strong>, while those seeking{" "}
-      <strong>simple, straightforward red light therapy</strong> may prefer{" "}
-      <strong>more focused alternatives</strong>.
+      The <strong> Megelin Red Light Therapy Mat</strong> is a smart, expensive
+      choice for users who want{" "}
+      <strong>targeted neck and shoulder relief</strong> in a{" "}
+      <strong>portable, easy-to-use format</strong>. Its ergonomic cervical
+      support, pulse modes, and lightweight design make it easy for daily
+      stress relief and desk-related tension.
     </p>
   ),
 

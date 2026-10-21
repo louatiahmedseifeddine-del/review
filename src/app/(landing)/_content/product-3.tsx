@@ -1,164 +1,130 @@
+import styles from "../page.module.css";
 import type { Product } from "../_components/product-section";
 import type { Scores } from "../_components/score-bars";
 
 const scores: Scores = {
-  Effectiveness: 8.7,
+  Effectiveness: 9.2,
   "Ease of Use": 9.4,
-  "Quality & Design": 9.3,
-  "Safety & Certifications": 9.6,
-  "Value for Money": 8.5,
-  "Customer Satisfaction": 9.2,
+  "Quality & Design": 9.6,
+  "Safety & Certifications": 9.3,
+  "Value for Money": 8.8,
+  "Customer Satisfaction": 9.5,
 };
 
-// Supplied inline, separated by vertical bars, with bold field labels.
-const specifications: [string, string][] = [
-  ["LEDs:", "3,840"],
-  ["Irradiance Power:", "140 mW/cm²"],
-  ["Adjustable brightness modes:", "Not specified"],
-  ["Wavelengths:", "660, 660, 810, 850, 940 nm"],
-  ["Dimensions:", "180 x 80 cm"],
-  ["Weight:", "Not specified"],
-  ["Safety Certified:", "FDA-registered"],
-  ["EMF Rating:", "Not specified"],
-  ["Free Warranty:", "Yes"],
+const rows: [string, React.ReactNode][] = [
+  ["Coverage", "200 × 105 cm"],
+  ["Wavelengths", "660nm + 850nm"],
+  ["LEDs", "1,000"],
+  ["Irradiance", "120 mW/cm²"],
+  ["Brightness modes", "5"],
+  ["Extras", "40Hz pulsing; stackable and hangable"],
+  ["Safety certified", "Not disclosed"],
+  ["EMF rating", "Not specified"],
+  ["Warranty", "Yes"],
 ];
 
 export const productThree: Product = {
   number: 3,
-  name: "Swirise Red & Near-Infrared Light Therapy Mat Pro",
+  name: "HigherDOSE Full Body Red Light Mat",
   sponsoredLabel: null,
-  tagline: "“A feature-rich mat with multi-wavelength versatility”",
+  tagline: "“A premium wellness brand and influencer favourite”",
   // Supplied as a finished summary image — displayed as-is, not recreated.
   evaluation: {
     kind: "image",
-    src: "/swirise-evaluation.png",
-    alt: "Swirise Red & Near-Infrared Light Therapy Mat Pro. Test Result: A-. Rating: 9.0/10. (3591 Reviews)",
+    src: "/higherdose-evaluation.png",
+    alt: "HigherDOSE Full Body Red Light Mat. Test Result: A-. Rating: 9.0/10. (3591 Reviews)",
   },
   availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
 
-  whyWeLoveIt: (
+  // The Overall Analysis runs as a table rather than prose: the facts a buyer
+  // compares, with weight only on the values that decide the purchase.
+  analysis: (
     <>
-      <p>
-        <strong>
-          The Swirise Red &amp; Near-Infrared Light Therapy Mat Pro
-        </strong>{" "}
-        stands out with its impressive{" "}
-        <strong>
-          6-wavelength system (630nm, 660nm, 810nm, 830nm, 880nm, and 1064nm)
-        </strong>{" "}
-        - more than most competitors offer.
-      </p>
-      <p>
-        This <strong>FDA-registered mat</strong> delivers powerful{" "}
-        <strong>140mW/cm² irradiance</strong>, meaning you get{" "}
-        <strong>84J/cm² of therapeutic energy in just 10 minutes</strong>,
-        making sessions <strong>efficient for busy schedules</strong>.
-      </p>
-      <p>
-        The inclusion of <strong>1064nm wavelength</strong> is particularly
-        noteworthy, as it{" "}
-        <strong>penetrates deeper than standard red light therapy</strong> to{" "}
-        <strong>target inflammation at the root level</strong>. With{" "}
-        <strong>3,840 LEDs</strong> across the generous{" "}
-        <strong>180 x 80 cm surface</strong>, coverage is{" "}
-        <strong>comprehensive and even</strong>.
-      </p>
-      <p>
-        The <strong>shorter session times (10-20 minutes)</strong> work well for
-        those integrating therapy into <strong>morning routines</strong> or{" "}
-        <strong>post-workout recovery</strong>.
+      <table className={styles.analysisTable}>
+        <tbody>
+          {rows.map(([label, value]) => (
+            <tr key={label}>
+              <th scope="row">{label}</th>
+              <td>{value}</td>
+            </tr>
+          ))}
+          <tr className={styles.analysisPriceRow}>
+            <th scope="row">Price</th>
+            <td>
+              <span className={styles.analysisHighlight}>$1,149</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p className={styles.verdict}>
+        <strong>Best for</strong> mood support, relaxation and lifestyle
+        routines. At this price the{" "}
+        <strong>1,000-LED count is the lowest here</strong>, so it is the
+        weaker choice for intensive pain management.
       </p>
     </>
   ),
 
-  whoItsFor: (
-    <p>
-      <strong>Ideal for serious wellness enthusiasts</strong> who want{" "}
-      <strong>clinical-grade results</strong>,{" "}
-      <strong>athletes needing deep tissue recovery</strong>, and{" "}
-      <strong>anyone dealing with chronic inflammation or pain</strong> who
-      values <strong>science-backed therapy</strong>.
-    </p>
-  ),
-
-  priceCheck: (
-    <p>
-      <strong>As of our last check on January 29, 2026</strong>, the{" "}
-      <strong>
-        The Swirise Red &amp; Near-Infrared Light Therapy Mat Pro
-      </strong>{" "}
-      was priced at <strong>$949</strong>, placing it in the{" "}
-      <strong>mid-to-upper premium tier for price</strong>. While positioned in
-      the <strong>premium range</strong>, the{" "}
-      <strong>6-wavelength system</strong> and <strong>high irradiance</strong>{" "}
-      deliver <strong>exceptional value</strong> for those seeking{" "}
-      <strong>professional-grade results at home</strong>.
-    </p>
-  ),
-
-  specifications: (
-    <>
-      {specifications.map(([label, value], index) => (
-        <span key={label}>
-          {index > 0 ? " | " : null}
-          <strong>{label}</strong> {value}
-        </span>
-      ))}
-    </>
-  ),
+  whyWeLoveIt: null,
+  whoItsFor: null,
+  priceCheck: null,
+  specifications: null,
 
   availabilityMid: { kind: "none" },
   scores,
 
   pros: [
     <>
-      <strong>Comprehensive wavelength system:</strong> combines 660, 660, 810,
-      850, 940 nm wavelengths.
+      <strong>Dual-wavelength coverage:</strong> combines 630 and 850 nm for
+      both skin and deep tissue benefits.
     </>,
     <>
-      <strong>High-powered irradiance:</strong> 140mW/cm² delivers faster, more
-      effective results.
+      <strong>Versatile design:</strong> stackable and hangable for multiple
+      room setups.
     </>,
     <>
-      <strong>Efficient sessions:</strong> achieve full therapeutic dose in just
-      10-20 minutes.
+      <strong>Premium brand:</strong> trusted wellness company with strong
+      customer support.
     </>,
     <>
-      <strong>Compact and portable:</strong> ideal for home or travel use, easy
-      to store and position.
+      <strong>40Hz pulsing:</strong> targeted frequency for muscle recovery and
+      pain relief.
     </>,
     <>
-      <strong>Plug-and-go operation:</strong> no setup required,
-      beginner-friendly.
+      <strong>Trusted brand:</strong> strong customer reviews and reputation
+      for reliability.
     </>,
   ],
 
   cons: [
     <>
-      <strong>Higher learning curve:</strong> multiple wavelengths may feel
-      overwhelming for beginners
+      <strong>Premium pricing:</strong> $1149 places it at the higher end of
+      the market.
     </>,
     <>
-      <strong>No adjustable brightness modes:</strong> less flexibility compared
-      to other mats in this price range.
+      <strong>Lower LED density:</strong> only 1,000 LEDs compared to 1,290 in
+      other comparable mats.
     </>,
     <>
-      <strong>Higher price:</strong> more LEDs and wavelengths, but this is
-      reflected in it’s premium price-point.
+      <strong>Limited public disclosure:</strong> we were unable to find
+      information online to confirm the product’s EMF rating and safety
+      certifications.
     </>,
   ],
 
   conclusion: (
     <p>
+      The <strong>HigherDOSE</strong> offers a{" "}
+      <strong>premium wellness experience</strong> with{" "}
+      <strong>excellent mood and lifestyle benefits</strong>, perfect for those
+      seeking <strong>relaxation and energy enhancement</strong>. However,{" "}
+      <strong>serious pain management users</strong> may find{" "}
       <strong>
-        The Swirise Red &amp; Near-Infrared Light Therapy Mat Pro
-      </strong>{" "}
-      is a <strong>scientifically advanced option</strong> that delivers{" "}
-      <strong>professional-grade therapy</strong> with{" "}
-      <strong>comprehensive wavelength coverage</strong>. Perfect for users who
-      want the <strong>most thorough red light treatment available</strong> and
-      don’t mind <strong>investing in superior technology</strong> for{" "}
-      <strong>faster, deeper results</strong>.
+        better therapeutic value in higher-density LED options at a lower price
+        point
+      </strong>
+      .
     </p>
   ),
 

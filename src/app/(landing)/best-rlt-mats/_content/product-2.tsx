@@ -188,7 +188,7 @@ export const productTwo: Product = {
         pick; on <strong>value for money</strong> it cannot, because{" "}
         <strong>$649.99 is a real step up from $199.99</strong> for the same
         light. Set against the{" "}
-        <strong>$949 to $1,255 full-size mats below</strong>, though, it is the
+        <strong>$739 to $1,255 full-size mats below</strong>, though, it is the
         cheaper way to get whole-body coverage.
       </p>
       <p>

@@ -1,3 +1,4 @@
+import styles from "../page.module.css";
 import type { Product } from "../_components/product-section";
 import type { Scores } from "../_components/score-bars";
 
@@ -9,6 +10,25 @@ const scores: Scores = {
   "Value for Money": 8.3,
   "Customer Satisfaction": 8.8,
 };
+
+const rows: [string, React.ReactNode][] = [
+  ["Coverage", "71 × 32 in — approx. 180 × 81 cm"],
+  ["Wavelengths", "660nm + 850nm"],
+  [
+    "LEDs",
+    <>
+      <span className={styles.analysisHighlight}>3,840</span> — 1,280 × 660nm
+      + 2,560 × 850nm
+    </>,
+  ],
+  ["Irradiance", "120 mW/cm² @ 0″"],
+  ["Brightness modes", "Not specified"],
+  ["LED lifespan", "Estimated 80,000 hours"],
+  ["Weight", "10 lb — approx. 4.5 kg"],
+  ["Safety certified", "FDA-registered, according to Megelin"],
+  ["EMF rating", "Not specified"],
+  ["Warranty", "1 year"],
+];
 
 export const productFive: Product = {
   number: 5,
@@ -24,97 +44,40 @@ export const productFive: Product = {
   },
   availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
 
-  whyWeLoveIt: (
+  // The Overall Analysis runs as a table rather than prose: the facts a buyer
+  // compares, with weight only on the values that decide the purchase.
+  analysis: (
     <>
-      <p>
-        This <strong> Red and Infrared Light Therapy Mat</strong> takes a much
-        more <strong>full-body approach</strong> than smaller targeted
-        red-light devices. The mat combines <strong>3,840 LEDs</strong> across
-        two widely used wavelengths —{" "}
-        <strong>660nm red light and 850nm near-infrared light</strong> — while
-        delivering a stated irradiance of{" "}
-        <strong>120 mW/cm² at 0 inches</strong>.
-      </p>
-      <p>
-        Its large <strong>71 × 32-inch surface</strong> is designed to provide
-        broad, uniform coverage while lying down, making it better suited to
-        users who want to treat{" "}
-        <strong>multiple areas during the same session</strong> rather than
-        repositioning a small panel or wrap repeatedly. they also lists an
-        estimated LED lifespan of <strong>80,000 hours</strong> and includes a{" "}
-        <strong>1-year warranty</strong>.
-      </p>
-      <p>
-        At approximately <strong>10 lb</strong>, however, this is considerably
-        larger and heavier than compact red-light pads. Its strength is
-        therefore less about portability and more about delivering a{" "}
-        <strong>
-          high LED count and broad treatment surface in one device
-        </strong>
-        .
+      <table className={styles.analysisTable}>
+        <tbody>
+          {rows.map(([label, value]) => (
+            <tr key={label}>
+              <th scope="row">{label}</th>
+              <td>{value}</td>
+            </tr>
+          ))}
+          <tr className={styles.analysisPriceRow}>
+            <th scope="row">Price</th>
+            <td>
+              <span className={styles.analysisHighlight}>$739</span> — reduced
+              from a displayed reference price of $1,849
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p className={styles.verdict}>
+        <strong>Best for</strong> maximum LED count and full-body coverage
+        at a mid-range price. At <strong>10 lb it is the heaviest here</strong>,
+        and its listing shows only 54 customer reviews.
       </p>
     </>
   ),
 
-  whoItsFor: (
-    <>
-      <p>
-        <strong>
-          Best suited for users who want large-area or full-body red and
-          near-infrared light coverage at home
-        </strong>{" "}
-        without investing in a rigid therapy bed or repeatedly repositioning a
-        smaller panel.
-      </p>
-      <p>
-        It may be particularly attractive to users prioritising{" "}
-        <strong>
-          coverage, LED density, and relatively strong stated irradiance
-        </strong>{" "}
-        over portability.
-      </p>
-    </>
-  ),
-
-  priceCheck: (
-    <>
-      <p>
-        As of our latest check on <strong>October 1st, 2026</strong>, this
-        <strong>
-          {" "}
-          Red and Infrared Light Therapy Mat is listed at $739
-        </strong>
-        , reduced from a displayed reference price of{" "}
-        <strong>$1,849</strong>. The product page currently shows{" "}
-        <strong>
-          54 customer reviews with an average rating of 4.72/5
-        </strong>
-        .
-      </p>
-      <p>
-        That places it well above entry-level red-light mats in price, although
-        its{" "}
-        <strong>
-          3,840 LEDs, 120 mW/cm² output, and full-body dimensions
-        </strong>{" "}
-        provide considerably more hardware.
-      </p>
-    </>
-  ),
-
-  specifications: (
-    <>
-      <strong>LEDs:</strong> 3,840 total — 1,280 × 660nm + 2,560 × 850nm |{" "}
-      <strong>Irradiance Power:</strong> 120 mW/cm² @ 0&quot; |{" "}
-      <strong>Adjustable Brightness Modes:</strong> Not specified |{" "}
-      <strong>Wavelengths:</strong> 660nm + 850nm | <strong>Dimensions:</strong>{" "}
-      71 × 32 in / approx. 180 × 81 cm | <strong>Weight:</strong> 10 lb /
-      approx. 4.5 kg | <strong>Safety Certified:</strong> FDA-Registered
-      according to Megelin | <strong>EMF Rating:</strong> Not specified |{" "}
-      <strong>Free Warranty:</strong> 1 Year |{" "}
-      <strong>Estimated LED Lifespan:</strong> 80,000 hours
-    </>
-  ),
+  whyWeLoveIt: null,
+  whoItsFor: null,
+  priceCheck: null,
+  specifications: null,
 
   availabilityMid: { kind: "none" },
   scores,
@@ -164,10 +127,6 @@ export const productFive: Product = {
       <strong>Limited published control specifications:</strong> Megelin does
       not clearly specify brightness levels or pulse-frequency modes in the
       technical specifications shown on the product page.
-    </>,
-    <>
-      <strong>Only a 1-year warranty:</strong> Relatively short compared with
-      competitors offering multi-year warranties.
     </>,
   ],
 

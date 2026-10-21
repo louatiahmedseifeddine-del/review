@@ -1,3 +1,4 @@
+import styles from "../page.module.css";
 import type { Product } from "../_components/product-section";
 import type { Scores } from "../_components/score-bars";
 
@@ -10,17 +11,22 @@ const APOLLO_BUTTON = {
   href: APOLLO_URL,
 } as const;
 
-const specifications: [string, string][] = [
-  ["LEDs:", "380 triple-chip modules / 1,140 individual chips"],
-  ["Reported Irradiance:", "146mW/cm² at the surface"],
-  ["Wavelengths:", "660nm red + 850nm near-infrared"],
-  ["Dimensions:", "Approximately 36.2 × 15.7 inches"],
-  ["Power:", "60W"],
-  ["Session Length:", "10–20 minutes"],
-  ["Coverage:", "Neck, shoulders, back, and hips"],
+const rows: [string, React.ReactNode][] = [
+  ["Coverage", "Neck, shoulders, back and hips — 36.2 × 15.7 inches"],
+  ["Wavelengths", "660nm red + 850nm near-infrared"],
+  ["LEDs", "380 triple-chip modules — 1,140 individual chips"],
+  ["Irradiance", "146 mW/cm² at the surface"],
+  ["Session", "10–20 minutes"],
+  ["Power", "60W"],
+  ["Controls", "Wired controller"],
   [
-    "Included:",
-    "Free Personalized Recovery Protocol, Free Recovery Cream, and Free Shipping",
+    "Included free",
+    <>
+      <span className={styles.analysisHighlight}>
+        Personalized Recovery Protocol
+      </span>
+      , Recovery Cream, Shipping
+    </>,
   ],
 ];
 
@@ -51,112 +57,42 @@ export const productOne: Product = {
   },
   availabilityTop: APOLLO_BUTTON,
 
-  whyWeLoveIt: (
+  // The Overall Analysis runs as a table rather than prose: the facts a buyer
+  // compares, with weight only on the values that decide the purchase.
+  analysis: (
     <>
-      <p>
-        If you’re looking for{" "}
-        <strong>
-          natural pain relief and faster recovery without repeated clinic
-          visits
-        </strong>
-        , the <strong>ApolloThera Recovery Mat</strong> brings red and
-        near-infrared light into a simple routine you can follow{" "}
-        <strong>from the comfort of home</strong>.
-      </p>
-      <p>
-        Its appeal starts with{" "}
-        <strong>
-          two complementary wavelengths: 660nm red light and 850nm
-          near-infrared light
-        </strong>
-        . Together, they give you a focused light therapy setup for the areas
-        you want to prioritise—without complicated equipment or a lengthy
-        setup.
-      </p>
-      <p>
-        With{" "}
-        <strong>
-          380 triple-chip LED modules—1,140 individual LED chips—and a reported
-          irradiance of 146mW/cm² at the surface
-        </strong>
-        , ApolloThera combines substantial light output with a{" "}
-        <strong>flexible, practical design</strong>.
-      </p>
-      <p>
-        The approximately{" "}
-        <strong>
-          36.2 × 15.7-inch mat covers the neck, shoulders, back, and hips
-        </strong>
-        . Place it on your bed, sofa, or recliner, position it against the
-        intended area, and start a <strong>10–20-minute session</strong> using
-        the controller. Its compact footprint makes it easy to fit into
-        everyday life and store between sessions.
-      </p>
-      <p>
-        <strong>
-          What makes ApolloThera stand out is the guidance included with your
-          purchase.
-        </strong>{" "}
-        The <strong>Free Personalized Recovery Protocol</strong> helps you
-        understand how to use the mat and build a consistent routine.{" "}
-        <strong>Free Recovery Cream and Free Shipping</strong> complete the
-        offer.
+      <table className={styles.analysisTable}>
+        <tbody>
+          {rows.map(([label, value]) => (
+            <tr key={label}>
+              <th scope="row">{label}</th>
+              <td>{value}</td>
+            </tr>
+          ))}
+          <tr className={styles.analysisPriceRow}>
+            <th scope="row">Price</th>
+            <td>
+              <span className={styles.analysisHighlight}>$199.99</span> — with
+              an advertised{" "}
+              <span className={styles.analysisNote}>50% OFF offer</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p className={styles.verdict}>
+        <strong>Best for</strong> treating one area at a time — neck,
+        shoulders, back or hips — at the lowest price on this list. Want the
+        whole body in a single session? The{" "}
+        <strong>#2 pick covers neck to ankles</strong>.
       </p>
     </>
   ),
 
-  whoItsFor: (
-    <p>
-      ApolloThera is particularly suited to{" "}
-      <strong>
-        active individuals, people exploring at-home options for everyday
-        discomfort, and anyone seeking a manageable recovery routine
-      </strong>
-      . Its{" "}
-      <strong>
-        neck-to-hip coverage, straightforward controls, and personalized
-        guidance
-      </strong>{" "}
-      make it appealing for users who want support getting started and staying
-      consistent.
-    </p>
-  ),
-
-  priceCheck: (
-    <>
-      <p>
-        <strong>As of our last check on October 1st, 2026</strong>, the{" "}
-        <strong>ApolloThera Recovery Mat retailed for $199.99</strong>, with an
-        advertised <strong>50% OFF offer</strong>.
-      </p>
-      <p>
-        With{" "}
-        <strong>
-          dual wavelengths, 1,140 individual LED chips, and a Free Personalized
-          Recovery Protocol
-        </strong>
-        , the package offers more than the device alone: it combines the mat
-        with <strong>guidance for building your routine</strong>, plus{" "}
-        <strong>Free Recovery Cream and Free Shipping</strong>.
-      </p>
-      <p>
-        To confirm whether the offer is still available, click the{" "}
-        <strong>“Check Availability”</strong> button below. Prices and
-        availability may change.
-      </p>
-    </>
-  ),
-
-  specifications: (
-    <>
-      {specifications.map(([label, value], index) => (
-        <span key={label}>
-          {index > 0 ? " | " : null}
-          <strong>{label}</strong> {value}
-        </span>
-      ))}
-    </>
-  ),
+  whyWeLoveIt: null,
+  whoItsFor: null,
+  priceCheck: null,
+  specifications: null,
 
   availabilityMid: APOLLO_BUTTON,
   scores,

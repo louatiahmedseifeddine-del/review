@@ -13,7 +13,6 @@ import { productTwo } from "./_content/product-2";
 import { productThree } from "./_content/product-3";
 import { productFour } from "./_content/product-4";
 import { productFive } from "./_content/product-5";
-import { productSix } from "./_content/product-6";
 import {
   benefits,
   benefitsHeading,
@@ -28,7 +27,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title:
-    "The 6 Best Red & Infrared Light Therapy Mats for At-Home Pain Relief & Recovery in 2026",
+    "The 5 Best Red & Infrared Light Therapy Mats for At-Home Pain Relief & Recovery in 2026",
 };
 
 // ---------------------------------------------------------------------------
@@ -51,7 +50,6 @@ const products: Product[] = [
   productThree,
   productFour,
   productFive,
-  productSix,
 ];
 
 
@@ -77,7 +75,7 @@ export default function Page() {
 
         {/* BLOCK C — ARTICLE OPENING */}
         <h1 className={styles.headline}>
-          The 6 Best Red &amp; Infrared Light Therapy Mats for At-Home Pain
+          The 5 Best Red &amp; Infrared Light Therapy Mats for At-Home Pain
           Relief &amp; Recovery in 2026
         </h1>
 
@@ -85,9 +83,9 @@ export default function Page() {
 
         <img
           className={styles.heroImage}
-          src="/hero-six-mats.png"
-          alt="The six mats side by side on a white background"
-          width={2365}
+          src="/hero-best-rlt-mats.png"
+          alt="The five mats side by side on a white background"
+          width={2000}
           height={672}
         />
 
@@ -111,7 +109,7 @@ export default function Page() {
             </strong>
           </p>
           <p>
-            That’s why we analysed six leading red light therapy mats,
+            That’s why we analysed five leading red light therapy mats,
             examining{" "}
             <strong>
               LED quality, wavelengths, coverage, power output, and reported
@@ -123,7 +121,7 @@ export default function Page() {
           </p>
           <p>
             <strong>
-              These are our top 6 red light therapy mats for 2026:
+              These are our top 5 red light therapy mats for 2026:
             </strong>
           </p>
         </div>

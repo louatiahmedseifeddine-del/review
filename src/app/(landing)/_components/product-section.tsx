@@ -16,6 +16,11 @@ export type Product = {
   evaluation: Evaluation;
   /** Step 5 — after the evaluation summary. */
   availabilityTop: Availability;
+  /**
+   * When supplied, a compact table replaces the four labeled prose blocks
+   * below. The prose fields are then left null and never rendered.
+   */
+  analysis?: React.ReactNode;
   whyWeLoveIt: React.ReactNode | null;
   whoItsFor: React.ReactNode | null;
   priceCheck: React.ReactNode | null;
@@ -70,26 +75,30 @@ export function ProductSection({ product }: { product: Product }) {
 
       <h3 className={styles.sectionHeading}>Overall Analysis</h3>
 
-      <Labeled
-        label="Why We Love It:"
-        value={product.whyWeLoveIt}
-        placeholder="Why We Love It paragraphs"
-      />
-      <Labeled
-        label="Who It’s For:"
-        value={product.whoItsFor}
-        placeholder="Who It’s For paragraph"
-      />
-      <Labeled
-        label="Price Check:"
-        value={product.priceCheck}
-        placeholder="Price Check paragraphs"
-      />
-      <Labeled
-        label="Specifications:"
-        value={product.specifications}
-        placeholder="specification text"
-      />
+      {product.analysis ?? (
+        <>
+          <Labeled
+            label="Why We Love It:"
+            value={product.whyWeLoveIt}
+            placeholder="Why We Love It paragraphs"
+          />
+          <Labeled
+            label="Who It’s For:"
+            value={product.whoItsFor}
+            placeholder="Who It’s For paragraph"
+          />
+          <Labeled
+            label="Price Check:"
+            value={product.priceCheck}
+            placeholder="Price Check paragraphs"
+          />
+          <Labeled
+            label="Specifications:"
+            value={product.specifications}
+            placeholder="specification text"
+          />
+        </>
+      )}
 
       <AvailabilityButton value={product.availabilityMid} />
 

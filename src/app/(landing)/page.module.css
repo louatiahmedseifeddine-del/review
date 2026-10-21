@@ -605,3 +605,95 @@
 .legalList li + li {
   margin-top: 8px;
 }
+
+/* ------------------------------------------------------------------ */
+/* Overall Analysis table — the compact alternative to the prose block. */
+/* ------------------------------------------------------------------ */
+
+.analysisTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0 18px;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.analysisTable tr {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.analysisTable tr:last-child {
+  border-bottom: 0;
+}
+
+.analysisTable th {
+  width: 34%;
+  padding: 11px 14px 11px 0;
+  text-align: left;
+  font-weight: 700;
+  color: #333333;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.analysisTable td {
+  padding: 11px 0;
+  vertical-align: top;
+}
+
+/* Only the two or three values worth the reader's eye carry weight. */
+.analysisHighlight {
+  font-weight: 700;
+  color: #111111;
+}
+
+.analysisNote {
+  color: #1ea93c;
+  font-weight: 700;
+}
+
+.analysisPriceRow {
+  background: #f3faf4;
+}
+
+.analysisPriceRow th {
+  padding-left: 10px;
+}
+
+.analysisPriceRow td {
+  padding-right: 10px;
+}
+
+.verdict {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  background: #f6f6f6;
+  border-left: 3px solid #27c34b;
+  border-radius: 4px;
+}
+
+@media (max-width: 480px) {
+  .analysisTable th,
+  .analysisTable td {
+    display: block;
+    width: auto;
+    white-space: normal;
+  }
+
+  .analysisTable th {
+    padding: 10px 0 2px;
+  }
+
+  .analysisTable td {
+    padding: 0 0 10px;
+  }
+
+  .analysisPriceRow th {
+    padding-left: 10px;
+  }
+
+  .analysisPriceRow td {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

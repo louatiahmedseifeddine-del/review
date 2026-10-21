@@ -1,3 +1,4 @@
+import styles from "../page.module.css";
 import type { Product } from "../_components/product-section";
 import type { Scores } from "../_components/score-bars";
 
@@ -10,16 +11,17 @@ const scores: Scores = {
   "Customer Satisfaction": 9.2,
 };
 
-const specifications: [string, string][] = [
-  ["LEDs:", "1,290"],
-  ["Irradiance Power:", "120 mW/cm²"],
-  ["Adjustable brightness modes:", "Not specified"],
-  ["Wavelengths:", "630, 660, 810, 830 1064 nm"],
-  ["Dimensions:", "160 x 60 cm"],
-  ["Weight:", "9 kg"],
-  ["Safety Certified:", "RoHS, FCC & CE approved"],
-  ["EMF Rating:", "Not specified"],
-  ["Free Warranty:", "Yes"],
+const rows: [string, React.ReactNode][] = [
+  ["Coverage", "160 × 60 cm — the smallest full-size mat here"],
+  ["Wavelengths", "630, 660, 810, 830, 1064 nm"],
+  ["LEDs", "1,290"],
+  ["Irradiance", "120 mW/cm²"],
+  ["Session", "Adjustable timer, 5–30 minutes"],
+  ["Extras", "ION therapy, EMS, vibration massage, ultrasound"],
+  ["Weight", "9 kg"],
+  ["Safety certified", "RoHS, FCC & CE approved"],
+  ["EMF rating", "Not specified"],
+  ["Warranty", "Yes"],
 ];
 
 export const productFour: Product = {
@@ -35,80 +37,41 @@ export const productFour: Product = {
   },
   availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
 
-  whyWeLoveIt: (
+  // The Overall Analysis runs as a table rather than prose: the facts a buyer
+  // compares, with weight only on the values that decide the purchase.
+  analysis: (
     <>
-      <p>
-        <strong>Redjuvi - Full Body Infrared Light Therapy Mat</strong> stands
-        out with its <strong>comprehensive feature set</strong>, combining{" "}
-        <strong>
-          6 different wavelengths (630nm, 660nm, 810nm, 830nm, 880nm, 1064nm)
-        </strong>{" "}
-        with additional wellness technologies like <strong>ION therapy</strong>,{" "}
-        <strong>EMS</strong>, <strong>vibration massage</strong>, and{" "}
-        <strong>ultrasound wave functions</strong>.
-      </p>
-      <p>
-        With <strong>1,280 LEDs</strong> and{" "}
-        <strong>120mW/cm² irradiance</strong>, it delivers{" "}
-        <strong>solid light therapy performance</strong> across a{" "}
-        <strong>160 x 60 cm surface</strong>. The{" "}
-        <strong>adjustable timer settings (5-30 minutes)</strong> and{" "}
-        <strong>variety of treatment modes</strong> make it{" "}
-        <strong>highly customisable</strong> for different wellness goals.
-      </p>
-      <p>
-        However, the <strong>complexity</strong> could also mean{" "}
-        <strong>more potential points of failure</strong>. It is also worth
-        noting that the mat is shorter in both length and width to the other
-        red light mats that we’ve reviewed,{" "}
-        <strong>
-          meaning it may be less suitable for larger users looking for
-          full-body coverage
-        </strong>
-        .
+      <table className={styles.analysisTable}>
+        <tbody>
+          {rows.map(([label, value]) => (
+            <tr key={label}>
+              <th scope="row">{label}</th>
+              <td>{value}</td>
+            </tr>
+          ))}
+          <tr className={styles.analysisPriceRow}>
+            <th scope="row">Price</th>
+            <td>
+              <span className={styles.analysisHighlight}>$1,255</span> — down
+              from $1,540
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p className={styles.verdict}>
+        <strong>Best for</strong> people who want ION, EMS, vibration and
+        ultrasound bundled into one device. It is the{" "}
+        <strong>most expensive mat on this list</strong> and the smallest of
+        the full-size options, so larger users should size up elsewhere.
       </p>
     </>
   ),
 
-  whoItsFor: (
-    <p>
-      <strong>Best suited for wellness enthusiasts</strong> who want an{" "}
-      <strong>all-in-one recovery system</strong> and don’t mind{" "}
-      <strong>paying premium prices</strong> for{" "}
-      <strong>maximum features</strong>. Less ideal for{" "}
-      <strong>beginners</strong> or those focused purely on{" "}
-      <strong>
-        basic red light therapy, and those who are larger in size, as this mat
-        is comparatively smaller than others on the market.
-      </strong>
-    </p>
-  ),
-
-  priceCheck: (
-    <p>
-      As of our last check on <strong>January 29, 2026</strong>, the{" "}
-      <strong>
-        Redjuvi - Full Body Infrared Light Therapy Mat retailed for $1,255 (down
-        from $1,540)
-      </strong>
-      , placing it in the{" "}
-      <strong>high-range category for price</strong> among comparable red light
-      mat. It offers solid technology and features but at a comparably high
-      cost, the <strong>cost may be prohibitive</strong> for many users seeking{" "}
-      <strong>basic red light therapy benefits</strong>.
-    </p>
-  ),
-
-  specifications: (
-    <>
-      {specifications.map(([label, value], index) => (
-        <span key={label}>
-          {index > 0 ? " | " : null}
-          <strong>{label}</strong> {value}
-        </span>
-      ))}
-    </>
-  ),
+  whyWeLoveIt: null,
+  whoItsFor: null,
+  priceCheck: null,
+  specifications: null,
 
   availabilityMid: { kind: "none" },
   scores,

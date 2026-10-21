@@ -3,36 +3,37 @@ import type { Product } from "../_components/product-section";
 import type { Scores } from "../_components/score-bars";
 
 const scores: Scores = {
-  Effectiveness: 8.7,
-  "Ease of Use": 9.4,
-  "Quality & Design": 9.3,
-  "Safety & Certifications": 9.6,
-  "Value for Money": 8.5,
+  Effectiveness: 9.0,
+  "Ease of Use": 9.3,
+  "Quality & Design": 9.1,
+  "Safety & Certifications": 9.4,
+  "Value for Money": 8.9,
   "Customer Satisfaction": 9.2,
 };
 
 const rows: [string, React.ReactNode][] = [
-  ["Coverage", "180 × 80 cm"],
-  ["Wavelengths", "660, 660, 810, 850, 940 nm"],
-  ["LEDs", "3,840"],
-  ["Irradiance", "140 mW/cm²"],
-  ["Session", "10–20 minutes"],
-  ["Brightness modes", "Not specified"],
-  ["Safety certified", "FDA-registered"],
+  ["Coverage", "160 × 60 cm — the smallest full-size mat here"],
+  ["Wavelengths", "630, 660, 810, 830, 1064 nm"],
+  ["LEDs", "1,290"],
+  ["Irradiance", "120 mW/cm²"],
+  ["Session", "Adjustable timer, 5–30 minutes"],
+  ["Extras", "ION therapy, EMS, vibration massage, ultrasound"],
+  ["Weight", "9 kg"],
+  ["Safety certified", "RoHS, FCC & CE approved"],
   ["EMF rating", "Not specified"],
   ["Warranty", "Yes"],
 ];
 
 export const productFour: Product = {
   number: 4,
-  name: "Swirise Red & Near-Infrared Light Therapy Mat Pro",
+  name: "Redjuvi - Full Body Infrared Light Therapy Mat",
   sponsoredLabel: null,
-  tagline: "“A feature-rich mat with multi-wavelength versatility”",
+  tagline: "“A premium wellness mat with advanced multi-spectrum technology”",
   // Supplied as a finished summary image — displayed as-is, not recreated.
   evaluation: {
     kind: "image",
-    src: "/swirise-evaluation.png",
-    alt: "Swirise Red & Near-Infrared Light Therapy Mat Pro. Test Result: A-. Rating: 9.0/10. (3591 Reviews)",
+    src: "/redjuvi-evaluation.png",
+    alt: "Redjuvi - Full Body Infrared Light Therapy Mat. Test Result: B. Rating: 8.2/10. (2971 Reviews)",
   },
   availabilityTop: { kind: "text", text: <strong>Available on Amazon</strong> },
 
@@ -51,17 +52,18 @@ export const productFour: Product = {
           <tr className={styles.analysisPriceRow}>
             <th scope="row">Price</th>
             <td>
-              <span className={styles.analysisHighlight}>$949</span>
+              <span className={styles.analysisHighlight}>$1,255</span> — down
+              from $1,540
             </td>
           </tr>
         </tbody>
       </table>
 
       <p className={styles.verdict}>
-        <strong>Best for</strong> buyers who want a high LED count and
-        multi-wavelength coverage in short sessions, and who are comfortable
-        at a premium price with{" "}
-        <strong>no adjustable brightness</strong>.
+        <strong>Best for</strong> people who want ION, EMS, vibration and
+        ultrasound bundled into one device. It is the{" "}
+        <strong>most expensive mat on this list</strong> and the smallest of
+        the full-size options, so larger users should size up elsewhere.
       </p>
     </>
   ),
@@ -76,53 +78,58 @@ export const productFour: Product = {
 
   pros: [
     <>
-      <strong>Comprehensive wavelength system:</strong> combines 660, 660, 810,
-      850, 940 nm wavelengths.
+      <strong>Comprehensive wavelength spectrum:</strong> 6 different
+      therapeutic wavelengths for targeted benefits (630, 660, 810, 830, 850,
+      1064 nm).
     </>,
     <>
-      <strong>High-powered irradiance:</strong> 140mW/cm² delivers faster, more
-      effective results.
+      <strong>Multi-modal therapy:</strong> includes EMS, vibration, ION
+      therapy, and ultrasound features.
     </>,
     <>
-      <strong>Efficient sessions:</strong> achieve full therapeutic dose in just
-      10-20 minutes.
+      <strong>Premium construction:</strong> high-quality materials and robust
+      LED array.
     </>,
     <>
-      <strong>Compact and portable:</strong> ideal for home or travel use, easy
-      to store and position.
-    </>,
-    <>
-      <strong>Plug-and-go operation:</strong> no setup required,
-      beginner-friendly.
+      <strong>Safety Certified:</strong> RoHS, FCC &amp; CE approved.
     </>,
   ],
 
   cons: [
     <>
-      <strong>Higher learning curve:</strong> multiple wavelengths may feel
-      overwhelming for beginners
+      <strong>Premium price point:</strong> $1,255 (down from $1,540) may limit
+      accessibility for those with a budget.
     </>,
     <>
-      <strong>No adjustable brightness modes:</strong> less flexibility compared
-      to other mats in this price range.
+      <strong>Feature complexity:</strong> numerous options may overwhelm users
+      wanting simple therapy.
     </>,
     <>
-      <strong>Higher price:</strong> more LEDs and wavelengths, but this is
-      reflected in it’s premium price-point.
+      <strong>Heavier unit:</strong> 9 kg may make portability and storage more
+      challenging.
+    </>,
+    <>
+      <strong>Potential over-engineering:</strong> many features may go unused
+      by average users.
+    </>,
+    <>
+      <strong>Lesser coverage:</strong> 160 x 60 cm compared to other mats
+      offering 180-200 x 80-105 cm.
     </>,
   ],
 
   conclusion: (
     <p>
-      <strong>
-        The Swirise Red &amp; Near-Infrared Light Therapy Mat Pro
-      </strong>{" "}
-      is a <strong>scientifically advanced option</strong> that delivers{" "}
-      <strong>professional-grade therapy</strong> with{" "}
-      <strong>comprehensive wavelength coverage</strong>. Perfect for users who
-      want the <strong>most thorough red light treatment available</strong> and
-      don’t mind <strong>investing in superior technology</strong> for{" "}
-      <strong>faster, deeper results</strong>.
+      The <strong>Redjuvi – Full Body Infrared Light Therapy Mat</strong> is a{" "}
+      <strong>premium, all-in-one option</strong> combining a{" "}
+      <strong>broad 6-wavelength spectrum</strong> with{" "}
+      <strong>advanced wellness features</strong> like{" "}
+      <strong>EMS, vibration, and ION therapy</strong>. It’s best suited for{" "}
+      <strong>experienced users</strong> who want{" "}
+      <strong>maximum versatility</strong> and don’t mind{" "}
+      <strong>added complexity</strong>, while those seeking{" "}
+      <strong>simple, straightforward red light therapy</strong> may prefer{" "}
+      <strong>more focused alternatives</strong>.
     </p>
   ),
 
